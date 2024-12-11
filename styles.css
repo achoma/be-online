@@ -1,8 +1,16 @@
 :root {
   --dark: #000f27;
   --blue: #385f86;
+  --lightest-blue: #20a0c7;
   --light-blue: #2887a5;
+
+  --dark-blue: #164c5b;
+  --light-green: #77c146;
+
   --green: #5fa134;
+
+  --dark-green: #3a6120;
+
   --light: #f4f4f4;
   --white: #fff;
 }
@@ -13,6 +21,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .container {
   /* border: solid 1px red; */
   max-width: 428px;
@@ -75,21 +84,36 @@ a {
 ul {
   list-style: none;
 }
+
 button {
-  background-color: var(--white);
-  color: var(--green);
-  padding: 12px 18px;
-  border: 2px solid var(--green);
-  border-radius: 12px;
-  cursor: pointer;
-  box-shadow: 2px 2px 8px var(--dark);
+  padding-top: 50px;
+  text-align: center;
 }
-button:hover,
-button:focus {
+
+.myBtn {
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: white;
   background-color: var(--green);
-  color: var(--white);
-  box-shadow: 2px 2px 8px var(--dark);
+  box-shadow: 0px 5px 0px 0px var(--dark-green);
 }
+
+.myBtn:hover {
+  color: white;
+  background-color: var(--light-green);
+}
+
+.myBtn:active {
+  color: white;
+  transform: translate(0px, 5px);
+}
+
+.myBtn:visited {
+  color: #fafafa;
+}
+
 /*---------------------------------
           HEADER
   ----------------------------------*/
@@ -299,16 +323,29 @@ nav a:hover {
   color: white;
   transform: rotateY(180deg);
 }
-.back2 button {
-  border: 2px solid var(--light-blue);
-  color: var(--light-blue);
+.back2 .myBtn {
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: white;
+  background-color: var(--light-blue);
+  box-shadow: 0px 5px 0px 0px var(--dark-blue);
 }
 
 .back2 button:hover,
 .back2 button:focus {
-  background-color: var(--light-blue);
-  color: var(--white);
+  background-color: var(--lightest-blue);
 }
+.back2 .myBtn:active {
+  color: white;
+  transform: translate(0px, 5px);
+}
+
+.back2 .myBtn:visited {
+  color: #fafafa;
+}
+
 .back1 p,
 .back2 p {
   color: var(--white);
@@ -324,14 +361,89 @@ nav a:hover {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+/* KONTAKT */
 #contact {
   background-color: var(--blue);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-#contact h2 {
-  color: var(--white);
+
+.contact {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  gap: 20px;
 }
+.contact-content {
+  padding: 0;
+}
+.contact-content li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contact-content svg {
+  fill: var(--white);
+}
+#contact h2 {
+  margin-top: 20px;
+}
+#contact h2,
+#contact p {
+  color: var(--white);
+  text-align: start;
+  line-height: 45px;
+}
+
+.contact form {
+  max-width: 600px;
+}
+#name::placeholder,
+#email::placeholder,
+#phone::placeholder,
+#subject::placeholder,
+#message::placeholder {
+  color: var(--blue);
+  font-size: 14px;
+}
+.contact input,
+.contact textarea {
+  color: var(--dark);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+}
+.privacy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.privacy input[type="checkbox"] {
+  margin: 0;
+  margin-right: 15px;
+  width: auto;
+  height: auto;
+}
+
+.privacy p,
+.privacy a {
+  font-size: 14px;
+
+  color: var(--white);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.privacy a {
+  color: var(--light-green);
+}
+
+.privacy a:hover {
+  text-decoration: underline;
+}
+/* FOOTER */
 footer {
   background-color: var(--white);
 }
@@ -342,6 +454,20 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.footer-content-item {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+footer svg {
+  fill: var(--green);
+}
+footer svg :focus,
+footer svg :hover {
+  fill: var(--blue);
+}
+
 .footer {
   background-color: var(--green);
   text-align: center;
@@ -349,4 +475,8 @@ footer {
 .footer p {
   color: var(--white);
   font-size: 14px;
+}
+
+/* KONTAKT  */
+#contact {
 }

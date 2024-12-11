@@ -57,7 +57,7 @@
           unikalne strony, które przyciągają uwagę i&nbsp;wspierają rozwój Twojego
           biznesu.
         </h3>
-        <button>dowiedz się więcej</button></div>
+        <button class="btn myBtn">dowiedz się więcej</button></div>
       </section>
       <section id="benefits" ><div class="container">
         <h2>Korzyści płynące z&nbsp;naszej współpracy</h2>
@@ -102,7 +102,7 @@
               dopasowane do&nbsp;potrzeb Twojej firmy.
             </p> </div>   <div class="back1">
       <p>Tworzenie Stron Internetowych</p>
-      <button>sprawdź ofertę</button>
+      <button class="btn myBtn">sprawdź ofertę</button>
     </div>
           </li>
           <li class="services-box2">
@@ -115,7 +115,7 @@
               zwiększają sprzedaż i&nbsp;zadowolenie klientów.
             </p></div><div class="back2">
       <p>Tworzenie Sklepów Online</p>
-      <button>sprawdź ofertę</button>
+      <button class="btn myBtn">sprawdź ofertę</button>
     </div>
           </li>
           <li class="services-box1">
@@ -128,7 +128,7 @@
               internetowej.
             </p></div><div class="back1">
       <p>Dodatkowe wsparcie administracyjne</p>
-      <button>sprawdź ofertę</button>
+      <button class="btn myBtn">sprawdź ofertę</button>
     </div>
           </li>
 <li class="services-box2">
@@ -139,66 +139,92 @@
               Tworzymy angażujące treści i&nbsp;grafiki, które budują obecność w&nbsp;mediach społecznościowych.
             </p></div><div class="back2">
       <p>Obsługa Social Media i&nbsp;Grafik</p>
-      <button>sprawdź ofertę</button>
+      <button class="btn myBtn">sprawdź ofertę</button>
     </div>
           </li>
         </ul><div class="services-btn">
-        <button >umów się na darmową konsultację</button></div></div>
+        <button class="btn myBtn">umów się na darmową konsultację</button></div></div>
       </section>
       <section id="realizations" ><div class="container">
-        <h2>Nasze wybrane realizacje</h2></div>
+        <h2>Nasze wybrane realizacje</h2>
+              <div class="services-btn"><button class="btn myBtn">zobacz nasze zrealizowane projekty</button></div></div>
+</div></div>
       </section>
-      <section id="contact" class="container">
-        <h2>Masz pytania? Skontaktuj się z nam</h2>
-        <ul>
-          <li>email: kontakt@be-online.com.pl</li>
-          <li>tel: +48 509 016 515</li>
-        </ul>
-        <form id="contactForm" action="" method="POST">
+      <section id="contact" ><div class="container contact">
+       <div> <h2>Masz pytania? </br>Skontaktuj się z nami</h2>
+        <ul class="contact-content">
+          <li> <svg height="24" width="24">
+                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+            <p> kontakt@be-online.com.pl</p></li>
+          <li><svg height="24" width="24">
+                    <use href="./images/symbol-defs.svg#icon-phone-square"></use>
+                </svg><p> +48 509 016 515</p></li>
+        </ul></div>
+        <div><form id="contactForm" action="" method="POST">
           <label for="name"
-            >Twoje imię
+            >
             <div>
-              <input id="name" type="text" name="name" required />
+              <input id="name" type="text" placeholder="Twoje imię"name="name" required />
             </div>
           </label>
 
           <label for="email"
-            >Email
+            >
             <div>
-              <input id="email" type="email" name="email" required />
+              <input id="email" type="email" placeholder="E-mail" name="email" required />
+            </div>
+          </label>
+                <label for="name"
+            >
+            <div>
+              <input id="phone" type="phone" placeholder="Nr telefonu (opcjonalnie)"name="name"  />
             </div>
           </label>
           <label for="phone"
-            >Temat
+            >
             <div>
-              <input id="subject" type="test" name="subject" />
+              <input id="subject" type="test" placeholder="Temat"name="subject" />
             </div>
           </label>
           <label></label>
             <div>
-              Twoja wiadomość<textarea type="text" name="comment"></textarea>
+              <textarea id="message" type="text" placeholder="Twoja wiadomość"name="comment"></textarea>
             </div>
           </label>
 
-          <label for="accept">
-            <div>
-              <input type="checkbox" id="privacy" required />
-              <label for="privacy"
-                >Akceptuję regulamin <a>Polityki Prywatności</a></label
-              >
-            </div>
-          </label>
+            <label for="accept">
+  <div class="privacy">
+    <input type="checkbox" id="privacy" required />
+    <p>Akceptuję regulamin <a href="#">Polityki Prywatności</a></p>
+  </div>
+  </label>
 
           <div>
-            <button type="submit">Wyślij wiadomość</button>
+            <button class="btn myBtn" type="submit">Wyślij wiadomość</button>
           </div>
-        </form>
+        </form></div></div>
       </section>
       <section></section>
       <section></section>
     </main>
-    <footer >   <div class="footer-content container">
-         <img src="images/logo.png" alt="author logo" width="250" /></div>
+    <footer >   
+      <div class="footer-content container">
+         <img src="images/logo.png" alt="author logo" width="250" />
+           <div class="footer-content-item">
+            <a id="sm" href="https://www.facebook.com/be.online.services" target="_blank" rel="noreferrer noopener">
+                <svg width="24">
+                    <use href="./images/symbol-defs.svg#icon-facebook2"></use>
+                </svg>
+            </a>
+          
+            <a id="sm"  href="https://www.instagram.com/be.online.services/" target="_blank" rel="noreferrer noopener">
+                <svg width="24">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+            </a>
+           </div>
+      </div>
          <div class="footer"><p>© 2024 be-online. Wszelkie prawa zastrzeżone.</p></div>
 </footer>
 
