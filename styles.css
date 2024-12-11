@@ -218,6 +218,7 @@ nav a:hover {
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
 }
+/* services */
 #services {
   background-color: var(--white);
   padding-top: 60px;
@@ -266,11 +267,11 @@ nav a:hover {
 .circle1,
 .circle2 {
   position: absolute;
-  top: -75px; /* Pozycja powyżej górnej krawędzi */
+  top: -25px; /* Pozycja powyżej górnej krawędzi */
   left: 50%;
   transform: translateX(-50%);
-  width: 150px; /* Średnica kółka, połowa szerokości boksa */
-  height: 150px;
+  width: 80px; /* Średnica kółka, połowa szerokości boksa */
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -284,11 +285,11 @@ nav a:hover {
 .circle2 {
   background-color: var(--green);
 }
-.circle i {
-  color: white;
-  font-size: 40px;
-}
 
+.circle1 svg,
+.circle2 svg {
+  fill: var(--white);
+}
 .front,
 .back1,
 .back2 {
