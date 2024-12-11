@@ -76,18 +76,19 @@ ul {
   list-style: none;
 }
 button {
-  background-color: var(--green);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--green);
   padding: 12px 18px;
-  border: none;
+  border: 2px solid var(--green);
   border-radius: 12px;
   cursor: pointer;
   box-shadow: 2px 2px 8px var(--dark);
 }
 button:hover,
 button:focus {
-  background-color: var(--light-blue);
-  box-shadow: 2px 2px 8px var(--green);
+  background-color: var(--green);
+  color: var(--white);
+  box-shadow: 2px 2px 8px var(--dark);
 }
 /*---------------------------------
           HEADER
@@ -132,7 +133,7 @@ nav a:hover {
   margin-top: 90px;
   width: 100%;
   height: 100%;
-  /* background-color: var(--dark, #2e2f42); */
+  background-color: var(--dark, #2e2f42);
   background-image: url(../images/hero.jpg);
   text-align: center;
   background-repeat: no-repeat;
@@ -192,4 +193,160 @@ nav a:hover {
   padding: 40px 30px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
+}
+#services {
+  background-color: var(--white);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.services-box {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+.services-box p,
+.services-box h4 {
+  text-align: center;
+  line-height: 25px;
+}
+
+.services-box1,
+.services-box2 {
+  position: relative;
+  width: 300px; /* Możesz dostosować szerokość */
+  height: 350px;
+  background-color: var(--light);
+  border-radius: 10px;
+  text-align: center;
+  perspective: 1000px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  overflow: visible; /* Zapewnia widoczność elementów wychodzących poza box */
+  z-index: 0;
+}
+.services-box1 {
+  border: 2px solid var(--light-blue);
+}
+.services-box2 {
+  border: 2px solid var(--green);
+}
+.services-box1:hover,
+.services-box2:hover {
+  transform: rotateY(-180deg);
+}
+
+.circle1,
+.circle2 {
+  position: absolute;
+  top: -75px; /* Pozycja powyżej górnej krawędzi */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px; /* Średnica kółka, połowa szerokości boksa */
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ustawia kółko na wierzchu */
+}
+.circle1 {
+  background-color: var(--light-blue);
+}
+.circle2 {
+  background-color: var(--green);
+}
+.circle i {
+  color: white;
+  font-size: 40px;
+}
+
+.front,
+.back1,
+.back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 100px 20px;
+  background-color: var(--light);
+}
+
+.back1 {
+  padding: 20px;
+  background-color: var(--light-blue);
+  color: white;
+  transform: rotateY(180deg);
+}
+.back2 {
+  padding: 20px;
+  background-color: var(--green);
+  color: white;
+  transform: rotateY(180deg);
+}
+.back2 button {
+  border: 2px solid var(--light-blue);
+  color: var(--light-blue);
+}
+
+.back2 button:hover,
+.back2 button:focus {
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+.back1 p,
+.back2 p {
+  color: var(--white);
+  font-size: 18px;
+  padding-bottom: 26px;
+}
+.services-btn {
+  display: flex;
+  justify-content: center;
+}
+#realizations {
+  background-color: var(--light);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#contact {
+  background-color: var(--blue);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#contact h2 {
+  color: var(--white);
+}
+footer {
+  background-color: var(--white);
+}
+.footer-content {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer {
+  background-color: var(--green);
+  text-align: center;
+}
+.footer p {
+  color: var(--white);
+  font-size: 14px;
 }
