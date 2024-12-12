@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-  /* border: solid 1px red; */
   max-width: 428px;
   margin: auto;
   padding: 0 20px;
@@ -158,7 +157,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
   background-color: var(--dark, #2e2f42);
-  background-image: url(./images/hero.jpg);
+  background-image: url(../images/hero.jpg);
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;

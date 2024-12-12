@@ -1,0 +1,35 @@
+#offer-hero {
+  margin-top: 90px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark, #2e2f42);
+  background-image: url(../images/about.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 122px;
+  padding-bottom: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#offer-mission {
+  background-color: var(--light);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#offer-values {
+  background-color: var(--white);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#offer-highlight {
+  background-color: var(--light);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#offer-trust {
+  background-color: var(--light);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
