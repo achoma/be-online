@@ -74,6 +74,7 @@ p {
   font-size: 16px;
   line-height: 30px;
   margin: 0;
+  text-align: center;
 }
 
 a {
@@ -179,6 +180,8 @@ nav a:hover {
   padding-bottom: 60px;
 }
 .benefits-box {
+  flex-wrap: wrap;
+
   padding: 0;
   display: flex;
   justify-content: center;
@@ -200,6 +203,7 @@ nav a:hover {
   padding: 40px 20px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
+  transition: transform 0.3s ease-in-out;
 }
 .benefits-box2 {
   width: 250px;
@@ -208,6 +212,7 @@ nav a:hover {
   padding: 40px 20px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
+  transition: transform 0.3s ease-in-out;
 }
 .benefits-box3 {
   width: 250px;
@@ -216,7 +221,17 @@ nav a:hover {
   padding: 40px 30px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
+  transition: transform 0.3s ease-in-out;
 }
+.benefits-box1:focus,
+.benefits-box1:hover,
+.benefits-box2:focus,
+.benefits-box2:hover,
+.benefits-box3:focus,
+.benefits-box3:hover {
+  transform: scale(1.05);
+}
+
 /* services */
 #services {
   background-color: var(--white);
@@ -224,12 +239,13 @@ nav a:hover {
   padding-bottom: 60px;
 }
 .services-box {
+  flex-wrap: wrap;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 55px;
 }
 .services-box p,
@@ -241,7 +257,7 @@ nav a:hover {
 .services-box1,
 .services-box2 {
   position: relative;
-  width: 300px; /* Możesz dostosować szerokość */
+  width: 250px; /* Możesz dostosować szerokość */
   height: 350px;
   background-color: var(--light);
   border-radius: 10px;
@@ -369,11 +385,20 @@ nav a:hover {
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: 0.4fr 0.6fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* display: grid; */
+  /* grid-template-columns: 0.4fr 0.6fr; */
   gap: 20px;
 }
-.contact-content {
+.contact div {
+  /* width: 100%; */
+}
+
+.contact-content ul {
   padding: 0;
 }
 .contact-content li {
@@ -393,9 +418,12 @@ nav a:hover {
   text-align: start;
   line-height: 45px;
 }
-
+.contact-content-item {
+  padding: 0;
+  width: 650px;
+}
 .contact form {
-  max-width: 600px;
+  max-width: 550px;
 }
 #name::placeholder,
 #email::placeholder,
@@ -411,7 +439,7 @@ nav a:hover {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #dcdcdc;
+  border: 1px solid var(--light);
   border-radius: 10px;
 }
 .privacy {
@@ -475,8 +503,4 @@ footer svg :hover {
 .footer p {
   color: var(--white);
   font-size: 14px;
-}
-
-/* KONTAKT  */
-#contact {
 }
