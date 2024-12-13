@@ -30,7 +30,7 @@
 }
 .offer-values-content div {
   padding-right: 15px;
-  width: 55%;
+  width: 58%;
 }
 .offer-values-content img {
   border-radius: 10px;
@@ -40,8 +40,8 @@
   text-align: justify;
 }
 .offer-values-content img {
-  width: 45%;
-  height: 45%;
+  width: 40%;
+  height: 40%;
 }
 #offer-values ul {
   display: flex;
@@ -54,7 +54,7 @@
 .offer-values1,
 .offer-values2 {
   background-color: var(--white);
-  max-width: 330px;
+  max-width: 328px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
   transition: transform 0.3s ease-in-out;
@@ -76,8 +76,8 @@
   background-color: var(--green);
 }
 .offer-values1 h4 {
-  border: solid 2px var(--light-blue);
-  background-color: var(--light-blue);
+  border: solid 2px var(--blue);
+  background-color: var(--blue);
 }
 #offer-values p {
   padding: 0 20px 20px 20px;

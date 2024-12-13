@@ -50,7 +50,6 @@ h2 {
   /* text-shadow: 1px 1px 2px var(--dark); */
   font-weight: 600;
   font-size: 32px;
-  letter-spacing: 2px;
   margin-top: 0;
   text-align: center;
   padding-bottom: 20px;
@@ -59,7 +58,7 @@ h3 {
   color: var(--white);
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   margin-top: 0;
   line-height: 35px;
 }
@@ -67,7 +66,7 @@ h4 {
   color: var(--dark);
   font-weight: 600;
   font-size: 18px;
-  letter-spacing: 1.3px;
+  /* letter-spacing: 1.3px; */
   margin-top: 0;
 }
 p {
@@ -147,7 +146,7 @@ nav a {
   /* font-weight: 700; */
 }
 .is-active {
-  color: var(--blue);
+  color: var(--green);
   text-decoration: underline;
 }
 nav a:hover {
@@ -199,6 +198,9 @@ nav a:hover {
   text-align: center;
   color: var(--white);
   line-height: 25px;
+}
+.benefits-box h4 {
+  text-transform: uppercase;
 }
 .benefits-box1 {
   width: 250px;
