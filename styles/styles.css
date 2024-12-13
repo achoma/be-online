@@ -146,9 +146,12 @@ nav a {
   color: var(--dark);
   /* font-weight: 700; */
 }
-
-nav a:hover {
+.is-active {
   color: var(--blue);
+  text-decoration: underline;
+}
+nav a:hover {
+  color: var(--light-blue);
   text-decoration: underline;
 }
 /*---------------------------------
