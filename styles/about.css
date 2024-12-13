@@ -32,6 +32,10 @@
   padding-right: 15px;
   width: 55%;
 }
+.offer-values-content img {
+  border-radius: 10px;
+  box-shadow: 18px 18px 1px var(--dark);
+}
 .offer-values-content p {
   text-align: justify;
 }
@@ -55,12 +59,7 @@
   box-shadow: 2px 4px 8px var(--dark);
   transition: transform 0.3s ease-in-out;
 }
-.offer-values2 {
-  border: solid 2px var(--green);
-}
-.offer-values1 {
-  border: solid 2px var(--light-blue);
-}
+/*  */
 #offer-values li:hover,
 #offer-values li:focus {
   transform: translateY(-10px);

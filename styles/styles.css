@@ -47,7 +47,7 @@ h1 {
 }
 h2 {
   color: var(--blue);
-  text-shadow: 1px 1px 2px var(--dark);
+  /* text-shadow: 1px 1px 2px var(--dark); */
   font-weight: 600;
   font-size: 32px;
   letter-spacing: 2px;
@@ -269,30 +269,22 @@ nav a:hover {
   overflow: visible; /* Zapewnia widoczność elementów wychodzących poza box */
   z-index: 0;
 }
-.services-box1 {
-  border: 2px solid var(--light-blue);
-  box-shadow: 2px 4px 8px var(--dark);
-}
+.services-box1,
 .services-box2 {
-  border: 2px solid var(--green);
   box-shadow: 2px 4px 8px var(--dark);
 }
 .services-box1:hover,
 .services-box2:hover {
   transform: rotateY(-180deg);
 }
-.services-box1 img {
-  border-radius: 10px;
-  box-shadow: 2px 4px 8px var(--dark);
-
-  border: 2px solid var(--light-blue);
-}
+.services-box1 img,
 .services-box2 img {
   border-radius: 10px;
-  box-shadow: 2px 4px 8px var(--dark);
+  box-shadow: 1px 1px 8px var(--dark);
 
-  border: 2px solid var(--green);
+  /* border: 2px solid var(--light-blue); */
 }
+
 .circle1,
 .circle2 {
   position: absolute;
@@ -305,14 +297,12 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 8px var(--dark);
   z-index: 1; /* Ustawia kółko na wierzchu */
 }
-.circle1 {
-  background-color: var(--light-blue);
-}
+.circle1,
 .circle2 {
-  background-color: var(--green);
+  background-color: var(--blue);
 }
 
 .circle1 svg,
@@ -337,49 +327,20 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 80px 20px;
+  padding: 90px 20px;
   background-color: var(--light);
 }
 
-.back1 {
-  padding: 20px;
-  background-color: var(--light-blue);
-  color: white;
-  transform: rotateY(180deg);
-}
+.back1,
 .back2 {
   padding: 20px;
-  background-color: var(--green);
+  background-color: var(--light);
   color: white;
   transform: rotateY(180deg);
-}
-.back2 .myBtn {
-  border-radius: 10px;
-  border: none;
-  text-decoration: none;
-  padding: 10px 30px;
-  color: white;
-  background-color: var(--light-blue);
-  box-shadow: 0px 5px 0px 0px var(--dark-blue);
-}
-
-.back2 button:hover,
-.back2 button:focus {
-  background-color: var(--lightest-blue);
-}
-.back2 .myBtn:active {
-  color: white;
-  transform: translate(0px, 5px);
-}
-
-.back2 .myBtn:visited {
-  color: #fafafa;
 }
 
 .back1 p,
 .back2 p {
-  color: var(--white);
-  font-size: 18px;
   padding-bottom: 26px;
 }
 .services-btn {
