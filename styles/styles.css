@@ -47,6 +47,7 @@ h1 {
 }
 h2 {
   color: var(--blue);
+  text-shadow: 1px 1px 2px var(--dark);
   font-weight: 600;
   font-size: 32px;
   letter-spacing: 2px;
@@ -270,15 +271,28 @@ nav a:hover {
 }
 .services-box1 {
   border: 2px solid var(--light-blue);
+  box-shadow: 2px 4px 8px var(--dark);
 }
 .services-box2 {
   border: 2px solid var(--green);
+  box-shadow: 2px 4px 8px var(--dark);
 }
 .services-box1:hover,
 .services-box2:hover {
   transform: rotateY(-180deg);
 }
+.services-box1 img {
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
 
+  border: 2px solid var(--light-blue);
+}
+.services-box2 img {
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+
+  border: 2px solid var(--green);
+}
 .circle1,
 .circle2 {
   position: absolute;
@@ -323,7 +337,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 100px 20px;
+  padding: 80px 20px;
   background-color: var(--light);
 }
 
@@ -388,14 +402,8 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* margin: 0; */
-  /* padding: 0; */
-  /* display: grid; */
-  /* grid-template-columns: 0.4fr 0.6fr; */
+
   gap: 20px;
-}
-.contact div {
-  /* width: 100%; */
 }
 
 .contact-content ul {
