@@ -1,0 +1,31 @@
+#contact-item {
+  margin-top: 120px;
+
+  background-image: url(../images/contact.png);
+}
+#contact-item .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#contact-item p {
+  color: var(--white);
+}
+#contact-item h2 {
+  text-align: start;
+  font-size: 26px;
+  line-height: 40px;
+  color: var(--light);
+}
+#contact-item .contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+#contact-item .contact form {
+  max-width: 450px;
+}
+#contact-item .contact-content-item {
+  padding: 0;
+  width: 550px;
+}
