@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./styles/contect.css" />
     <link rel="stylesheet" href="./styles/offer.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/contact-modal.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
@@ -141,7 +143,10 @@ rozwiązania do Twoich oczekiwań.</p></li>
     </div>
           </li>
         </ul><div class="services-btn">
-        <button class="btn myBtn">umów się na darmową konsultację</button></div></div>
+                   
+          <button class="btn myBtn servis-button" type="button"  data-modal-open>
+umów się na darmową konsultację          </button>
+        </div></div>
       </section>         
       <section id="offer-trust"><div class="container"><h2>Dlaczego warto nam zaufać?</h2><p>Bo wierzymy, że sukces Twojej marki jest naszym sukcesem.
          W&nbsp;be-online łączymy technologię z pasją, by&nbsp;tworzyć projekty, które nie tylko zachwycają, 
@@ -169,7 +174,77 @@ rozwiązania do Twoich oczekiwań.</p></li>
       </div>
          <div class="footer"><p>© 2024 be-online. Wszelkie prawa zastrzeżone.</p></div>
 </footer>
+    <div  class="backdrop is-hidden" data-modal>
+      <div class="modal">
+      <div  class="button-close" data-modal-close>
+        <svg width="14px" height="14px">
+          <use href="
+          ./images/symbol-defs.svg#icon-cross"
+          ></use>
+        </svg>
+      </div>
+        <div class="contact-content-item form-modal">
+          <h3>Masz pytania?
+Skontaktuj się z nami</h3>
+          <form id="contactForm"   action="https://formspree.io/f/xyzyqjrd"
+  method="POST">
+          <label for="name"
+            >
+            <div>
+              <input id="name" type="text" placeholder="Twoje imię"name="name" required />
+            </div>
+          </label>
 
-  </body>
+          <label for="email"
+            >
+            <div>
+              <input id="email" type="email" placeholder="E-mail" name="email" required />
+            </div>
+          </label>
+                <label for="name"
+            >
+            <div>
+              <input id="phone" type="phone" placeholder="Nr telefonu (opcjonalnie)"name="name"  />
+            </div>
+          </label>
+          <label for="phone"
+            >
+            <div>
+              <input id="subject" type="test" placeholder="Temat"name="subject" />
+            </div>
+          </label>
+          <label></label>
+            <div>
+              <textarea id="message" type="text" placeholder="Twoja wiadomość"name="comment"></textarea>
+            </div>
+          </label>
+
+            <label for="accept">
+  <div class="privacy">
+    <input type="checkbox" id="privacy" required />
+    <p>Akceptuję regulamin <a href="#">Polityki Prywatności</a></p>
+  </div>
+  </label>
+
+          <div>
+            <button class="btn myBtn" type="submit">Wyślij wiadomość</button>
+          </div>
+        </form>
+      <ul >
+          <li> <svg height="24" width="24">
+                    <use href=   "./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+            <p> kontakt@be-online.com.pl</p></li>
+          <li><svg height="24" width="24">
+                    <use href="./images/symbol-defs.svg#icon-phone-square"></use>
+                </svg><p> +48 509 016 515</p></li>
+        </ul></div>
+                    </div>
+      </div>
+
+    </div>
+      <script src="./js/contact-modal.js"></script>
+
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </body>
 </html>
