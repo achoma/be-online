@@ -1,6 +1,6 @@
 #working {
   margin-top: 90px;
-  background-color: var(--blue);
+  background-color: var(--dark);
 }
 #working h4 {
   color: var(--white);
@@ -32,7 +32,6 @@
   background-color: var(--light);
 }
 #working3 {
-  /* background-color: var(--dark); */
   background-image: url(../images/contact.png);
 }
 .work-box1,
