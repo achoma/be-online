@@ -1,0 +1,95 @@
+#working {
+  margin-top: 90px;
+  background-color: var(--blue);
+}
+#working h4 {
+  color: var(--white);
+  font-weight: 300;
+  text-align: justify;
+  line-height: 30px;
+}
+.work-box ul {
+  list-style: disc;
+  line-height: 30px;
+  color: var(--dark);
+  text-align: justify;
+}
+.work-box p {
+  color: var(--dark);
+  text-align: justify;
+}
+#working,
+#working1,
+#working2,
+#working3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#working1 {
+  background-color: var(--white);
+}
+#working2 {
+  background-color: var(--light);
+}
+#working3 {
+  /* background-color: var(--dark); */
+  background-image: url(../images/contact.png);
+}
+.work-box1,
+.work-box2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.work-box {
+  text-align: justify;
+  width: 50%;
+}
+#working1 img,
+#working2 img {
+  max-width: 450px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+#working3 img {
+  max-width: 480px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+#working1 img:hover,
+#working2 img:hover,
+#working3 img:hover,
+#working1 img:focus,
+#working1 img:focus,
+#working3 img:focus {
+  transform: scale(1.02);
+}
+
+#working2 img {
+  box-shadow: -18px 18px 1px var(--dark);
+}
+#working1 img {
+  box-shadow: 18px 18px 1px var(--dark);
+}
+#working3 img {
+  box-shadow: -18px 18px 1px var(--light-blue);
+}
+#working2 button {
+  margin-top: 26px;
+}
+#working2 h3 {
+  padding-left: 14px;
+  color: var(--blue);
+  font-weight: 700;
+}
+#working1 p,
+#working2 p,
+#working3 p {
+  text-align: justify;
+}
+#working3 p,
+#working3 h2 {
+  color: var(--white);
+}
