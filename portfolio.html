@@ -19,12 +19,16 @@
     <link
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap""
     rel="stylesheet" />
-    <link rel="stylesheet" href="./styles/about.css" />  
-      <link rel="stylesheet" href="./styles/work.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+          <link rel="stylesheet" href="./styles/work.css" />
 
     <link rel="stylesheet" href="./styles/contect.css" />
     <link rel="stylesheet" href="./styles/offer.css" />
+        <link rel="stylesheet" href="./styles/portfolio.css" />
+
     <link rel="stylesheet" href="./styles/styles.css" />
+            <link rel="stylesheet" href="./styles/contact-modal.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
@@ -41,8 +45,8 @@
         <nav>
           <ul>
             <li><a href="./offer.html">Oferta</a></li>
-            <li><a href="./work.html">Jak pracujemy</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a  href="./work.html">Jak pracujemy</a></li>
+            <li><a class="is-active" href="./portfolio.html">Portfolio</a></li>
             <li><a href="./about.html">O nas</a></li>
             <li><a href="./contact.html">Kontakt</a></li>
             
@@ -53,20 +57,72 @@
       </div>
     </div>
     </header> 
-        <main><h2>PORTFOLIO</h2></main>
+        <main>
+          <section id="portfolio">
+            <div class="container">
+<p>Każdy projekt to unikalna historia, której jesteśmy częścią. Każda strona internetowa, którą 
+  tworzymy, jest odpowiedzią na indywidualne potrzeby naszych klientów. Skupiamy się na tym, aby
+  projekty były nie tylko estetyczne i&nbspnowoczesne, ale przede wszystkim funkcjonalne, intuicyjne 
+  i&nbspskuteczne w&nbsprealizacji wyznaczonych celów.
+  Zobacz nasze realizacje i&nbspprzekonaj się, 
+  jak możemy pomóc także Twojej marce zaistnieć w&nbspsieci. Każda z tych stron to efekt pasji, 
+  kreatywności i&nbspdbałości o&nbspkażdy szczegół. Zapraszamy do odkrycia naszego portfolio!</p>
+<div class="portfolio-image">
+  <div class="portfolio-image-container">
+    <img src="images/portfolio-1.png" alt="sharkbuy.pl">
+    <div class="overlay1">
+            <span><h4>sharkbuy.pl</h4><p>sklep internetowy z artykułami sportowymi</p></span>
+
+      <span  >
+        <a href="https://sharkbuy.pl/" target="_blank" rel="noopener noreferrer"><button  class=" myBtn">zobacz realizację</button></a></span>
+    </div>
+  </div>
+  <div class="portfolio-image-container">
+    <img src="images/portfolio-2.png" alt="agnieszkachoma.online">
+    <div class="overlay2">
+            <span><h4>agnieszkachoma.online</h4><p>strona wizytówka z portfolio </p></span>
+            <span  >
+        <a href="https://agnieszkachoma.online/" target="_blank" rel="noopener noreferrer"><button  class=" myBtn">zobacz realizację</button></a></span>
+    </div>
+  </div>
+ </div>
+<div class="portfolio-container"><p>Wszystkie te realizacje to dowód na to, jak dużą wagę przykładamy do każdego detalu – 
+  od koncepcji, przez design, aż po wdrożenie. Jesteśmy przekonani, że dobra strona internetowa 
+  to inwestycja, która przekłada się na rozwój firmy, zwiększenie jej zasięgów i&nbspbudowanie 
+  pozytywnego wizerunku w&nbspInternecie.
+
+Jeśli zainspirowały Cię nasze projekty, a&nbspTy również chcesz, aby Twoja strona internetowa 
+wyróżniała się na tle konkurencji i&nbspprzyciągała nowych klientów, jesteśmy tutaj, aby Ci pomóc. 
+Zrealizujemy dla Ciebie projekt, który będzie dopasowany do Twoich unikalnych potrzeb i&nbspcelów biznesowych.</p>
+<h3>Czas na działanie!
+</h3>
+<p>Zacznijmy współpracę, która pomoże Ci osiągnąć sukces online. Skontaktuj się z&nbspnami, 
+  a&nbspwspólnie stworzymy stronę, która będzie nie tylko piękna, ale i&nbspskuteczna. Niezależnie od tego, 
+  czy chodzi o&nbspstronę firmową, sklep internetowy czy blog – możemy dostarczyć Ci rozwiązania, 
+  które w&nbsppełni spełnią Twoje oczekiwania.</p>
+<h3>Czekamy na Twoje wyzwanie!
+</h3>
+<div class="services-btn">
+         <button class="btn myBtn servis-button" type="button"  data-modal-open>
+umów się na darmową konsultację          </button><a href="./offer.html"><button class="btn myBtn">
+sprawdź szczegóły naszej oferty</button></a></div></div>
+
+            </div>
+          </section>
+        </main>
 
     <footer >   
       <div class="footer-content container">
          <img src="images/logo.png" alt="author logo" width="250" />
            <div class="footer-content-item">
             <a id="sm" href="https://www.facebook.com/be.online.services" target="_blank" rel="noreferrer noopener">
-                <svg width="24">
+                <svg height="24"  width="24">
                     <use href="./images/symbol-defs.svg#icon-facebook2"></use>
                 </svg>
             </a>
           
             <a id="sm"  href="https://www.instagram.com/be.online.services/" target="_blank" rel="noreferrer noopener">
-                <svg width="24">
+                <svg height="24" width="24">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
             </a>
@@ -74,7 +130,78 @@
       </div>
          <div class="footer"><p>© 2024 be-online. Wszelkie prawa zastrzeżone.</p></div>
 </footer>
+    <div  class="backdrop is-hidden" data-modal>
+      <div class="modal">
+      <div  class="button-close" data-modal-close>
+        <svg width="14px" height="14px">
+          <use href="
+          ./images/symbol-defs.svg#icon-cross"
+          ></use>
+        </svg>
+      </div>
+        <div class="contact-content-item form-modal">
+          <h3>Masz pytania?
+Skontaktuj się z nami</h3>
+          <form id="contactForm"   action="https://formspree.io/f/xyzyqjrd"
+  method="POST">
+          <label for="name"
+            >
+            <div>
+              <input id="name" type="text" placeholder="Twoje imię"name="name" required />
+            </div>
+          </label>
 
-  </body>
+          <label for="email"
+            >
+            <div>
+              <input id="email" type="email" placeholder="E-mail" name="email" required />
+            </div>
+          </label>
+                <label for="name"
+            >
+            <div>
+              <input id="phone" type="phone" placeholder="Nr telefonu (opcjonalnie)"name="name"  />
+            </div>
+          </label>
+          <label for="phone"
+            >
+            <div>
+              <input id="subject" type="test" placeholder="Temat"name="subject" />
+            </div>
+          </label>
+          <label></label>
+            <div>
+              <textarea id="message" type="text" placeholder="Twoja wiadomość"name="comment"></textarea>
+            </div>
+          </label>
+
+            <label for="accept">
+  <div class="privacy">
+    <input type="checkbox" id="privacy" required />
+    <p>Akceptuję regulamin <a href="#">Polityki Prywatności</a></p>
+  </div>
+  </label>
+
+          <div>
+            <button class="btn myBtn" type="submit">Wyślij wiadomość</button>
+          </div>
+        </form>
+      <ul >
+          <li> <svg height="24" width="24">
+                    <use href=   "./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+            <p> kontakt@be-online.com.pl</p></li>
+          <li><svg height="24" width="24">
+                    <use href="./images/symbol-defs.svg#icon-phone-square"></use>
+                </svg><p> +48 509 016 515</p></li>
+        </ul></div>
+                    </div>
+      </div>
+
+    </div>
+      <script src="./js/contact-modal.js"></script>
+          <script type="module" src="./js/contect-form.js"></script>
+
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </body>
 </html>

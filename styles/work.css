@@ -1,6 +1,28 @@
 #working {
   margin-top: 90px;
-  background-color: var(--dark);
+}
+.video-section {
+  position: relative;
+  height: 100vh; /* Wysokość sekcji na cały ekran */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Dopasowanie wideo */
+  z-index: -1; /* Przesunięcie wideo za treść */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Treść nad wideo */
+  color: white; /* Dostosuj kolor tekstu */
+  text-align: center;
+  padding: 20px;
 }
 #working h4 {
   color: var(--white);

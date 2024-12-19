@@ -1,0 +1,104 @@
+#portfolio {
+  margin-top: 90px;
+  background-color: var(--light);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.portfolio-image {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+
+.portfolio-image-container {
+  box-shadow: 2px 4px 8px var(--dark);
+  position: relative;
+  max-width: 520px;
+  min-width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-image-container img {
+  width: 100%;
+  display: block;
+}
+
+.overlay1,
+.overlay2,
+.overlay3,
+.overlay4 {
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: left 0.5s ease;
+}
+.overlay1 {
+  background-color: var(--dark);
+}
+.overlay2 {
+  background-color: var(--light-blue);
+}
+.overlay3 {
+  background-color: var(--green);
+}
+.overlay4 {
+  background-color: var(--blue);
+}
+.portfolio-image-container:hover .overlay1,
+.portfolio-image-container:hover .overlay2,
+.portfolio-image-container:hover .overlay3,
+.portfolio-image-container:hover .overlay4 {
+  left: 0;
+}
+.portfolio-image-container h4 {
+  text-transform: uppercase;
+}
+
+.portfolio-image-container p,
+.portfolio-image-container h4 {
+  text-align: center;
+  color: var(--light);
+}
+.portfolio-image-container .myBtn {
+  margin-top: 20px;
+  background: transparent;
+  box-shadow: 0px 5px 0px 0px var(--light-grey);
+  border: solid 0.5px var(--light);
+  transition: transform 0.3s ease-in-out;
+}
+.portfolio-image-container .myBtn:hover,
+.portfolio-image-container .myBtn:focus {
+  background-color: transparent;
+  transform: translateY(8px);
+}
+.portfolio-container {
+  padding-top: 60px;
+}
+.portfolio-container h3 {
+  padding-top: 12px;
+  color: var(--dark);
+  font-weight: 700;
+  text-align: center;
+}
+.portfolio-container a button {
+  background-color: var(--light-blue);
+  box-shadow: 0px 5px 0px 0px var(--dark-blue);
+}
+.portfolio-container a button:hover,
+.portfolio-container a button:focus {
+  background-color: var(--lightest-blue);
+}
+.portfolio-container .services-btn {
+  gap: 50px;
+  margin-top: 40px;
+}
