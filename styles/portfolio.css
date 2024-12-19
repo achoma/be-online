@@ -90,15 +90,3 @@
   font-weight: 700;
   text-align: center;
 }
-.portfolio-container a button {
-  background-color: var(--light-blue);
-  box-shadow: 0px 5px 0px 0px var(--dark-blue);
-}
-.portfolio-container a button:hover,
-.portfolio-container a button:focus {
-  background-color: var(--lightest-blue);
-}
-.portfolio-container .services-btn {
-  gap: 50px;
-  margin-top: 40px;
-}

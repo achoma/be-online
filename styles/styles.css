@@ -89,6 +89,7 @@ ul {
 button {
   padding-top: 50px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .myBtn {
@@ -99,9 +100,12 @@ button {
   color: white;
   background-color: var(--green);
   box-shadow: 0px 5px 0px 0px var(--dark-green);
+  transition: transform 0.3s ease-in-out;
 }
 
 .myBtn:hover {
+  transform: translateY(4px);
+
   color: white;
   background-color: var(--light-green);
 }
@@ -539,4 +543,16 @@ footer svg :hover {
 .footer p {
   color: var(--white);
   font-size: 14px;
+}
+.blue-button {
+  background-color: var(--light-blue);
+  box-shadow: 0px 5px 0px 0px var(--dark-blue);
+}
+.blue-button:hover,
+.blue-button:focus {
+  background-color: var(--lightest-blue);
+}
+.services-btn {
+  gap: 50px;
+  margin-top: 40px;
 }
