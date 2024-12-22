@@ -118,7 +118,18 @@ button {
 .myBtn:visited {
   color: #fafafa;
 }
-
+.dark {
+  background-color: var(--dark);
+}
+.blue {
+  background-color: var(--blue);
+}
+.light-blue {
+  background-color: var(--light-blue);
+}
+.green {
+  background-color: var(--green);
+}
 /*---------------------------------
           HEADER
   ----------------------------------*/
