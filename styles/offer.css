@@ -1,7 +1,7 @@
 #offer {
   padding-top: 120px;
 }
-.offer-www {
+#offer-www {
   background-color: var(--light);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -37,7 +37,6 @@
 
 .one {
   background-color: var(--white);
-  color: white;
   padding: 25px;
   transition: transform 0.3s ease-in-out;
   position: relative;
@@ -90,4 +89,56 @@
 .two .myBtn:focus {
   background-color: transparent;
   transform: translateY(8px);
+}
+
+.offer-shop-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+#offer-shop {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.shop-container {
+  background-color: var(--light);
+  justify-content: center;
+  max-width: 48%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+}
+
+.shop-one {
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.shop-one li {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.shop-one h2 {
+  margin: 22px;
+}
+.shop-one button {
+  margin: 22px;
+  justify-content: center;
+}
+.shop-container h3 {
+  line-height: 20px;
+  color: var(--dark);
+}
+.shop-container ul {
+  color: var(--dark);
+  line-height: 25px;
+
+  padding: 0;
 }
