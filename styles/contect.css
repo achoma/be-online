@@ -16,6 +16,18 @@
   line-height: 40px;
   color: var(--light);
 }
+#contact-item h4 {
+  color: var(--light);
+  font-weight: normal;
+  line-height: 40px;
+}
+.contact-content {
+  max-width: 50%;
+}
+.contact-content ul {
+  display: inline-flex;
+  gap: 50px;
+}
 #contact-item .contact {
   display: flex;
   flex-wrap: wrap;

@@ -4,7 +4,7 @@
   --lightest-blue: #20a0c7;
   --light-blue: #2887a5;
 
-  --dark-blue: #164c5b;
+  --dark-blue: #162d5b;
   --light-green: #77c146;
 
   --green: #5fa134;
@@ -205,7 +205,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
   padding-top: 25px;
   padding-bottom: 55px;
 }
@@ -220,7 +220,7 @@ nav a:hover {
 }
 .benefits-box1 {
   width: 250px;
-  height: 250px;
+  height: 350px;
   background-color: var(--blue);
   padding: 40px 20px;
   border-radius: 10px;
@@ -229,7 +229,7 @@ nav a:hover {
 }
 .benefits-box2 {
   width: 250px;
-  height: 250px;
+  height: 350px;
   background-color: var(--light-blue);
   padding: 40px 20px;
   border-radius: 10px;
@@ -238,13 +238,24 @@ nav a:hover {
 }
 .benefits-box3 {
   width: 250px;
-  height: 250px;
+  height: 350px;
   background-color: var(--green);
   padding: 40px 30px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
   transition: transform 0.3s ease-in-out;
 }
+.benefits-box0 {
+  width: 250px;
+  height: 350px;
+  background-color: var(--dark-blue);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+  transition: transform 0.3s ease-in-out;
+}
+.benefits-box0:focus,
+.benefits-box0:hover,
 .benefits-box1:focus,
 .benefits-box1:hover,
 .benefits-box2:focus,
@@ -265,7 +276,7 @@ nav a:hover {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
   padding-top: 50px;
   padding-bottom: 55px;
@@ -279,7 +290,7 @@ nav a:hover {
 .services-box1,
 .services-box2 {
   position: relative;
-  width: 250px; /* Możesz dostosować szerokość */
+  width: 300px; /* Możesz dostosować szerokość */
   height: 350px;
   background-color: var(--light);
   border-radius: 10px;

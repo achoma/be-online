@@ -105,7 +105,6 @@
   background-color: var(--light);
   justify-content: center;
   max-width: 48%;
-  position: relative;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
@@ -141,4 +140,9 @@
   line-height: 25px;
 
   padding: 0;
+}
+#offer-support {
+  background-color: var(--light);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }

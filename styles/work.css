@@ -27,7 +27,7 @@
 #working h4 {
   color: var(--white);
   font-weight: 300;
-  text-align: justify;
+  /* text-align: justify; */
   line-height: 30px;
 }
 .work-box ul {
