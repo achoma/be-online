@@ -24,20 +24,20 @@ body {
 }
 
 .container {
-  max-width: 428px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 20px;
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-}
-@media screen and (min-width: 1200px) {
+} */
+/* @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
-}
+} */
 h1 {
   color: var(--white);
   font-weight: 600;
@@ -390,6 +390,7 @@ nav a:hover {
 .services-btn {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #realizations {
   background-color: var(--light);
@@ -474,10 +475,12 @@ nav a:hover {
 
 .contact-content ul {
   padding: 0;
+  flex-wrap: wrap;
 }
 .contact-content li {
   display: flex;
   align-items: center;
+
   gap: 15px;
 }
 .contact-content svg {
