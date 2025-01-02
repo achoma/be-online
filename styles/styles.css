@@ -138,10 +138,17 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--white);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }
+
+header.hidden {
+  transform: translateY(-100%);
+}
+
 .header-content {
   padding-top: 8px;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
   display: flex;
   justify-content: space-between;
   align-items: center;

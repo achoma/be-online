@@ -1,5 +1,5 @@
 #contact-item {
-  margin-top: 120px;
+  margin-top: 100px;
 
   background-image: url(../images/contact.png);
 }
@@ -8,13 +8,13 @@
   padding-bottom: 60px;
 }
 #contact-item p {
-  color: var(--white);
+  color: var(--light);
 }
 #contact-item h2 {
   text-align: start;
   font-size: 26px;
   line-height: 40px;
-  color: var(--light);
+  color: var(--green);
 }
 #contact-item h4 {
   color: var(--light);
@@ -27,6 +27,9 @@
 .contact-content ul {
   display: inline-flex;
   gap: 50px;
+}
+.contact-content ul svg {
+  fill: var(--green);
 }
 #contact-item .contact {
   display: flex;
