@@ -207,7 +207,6 @@ nav a:hover {
 }
 .benefits-box {
   flex-wrap: wrap;
-
   padding: 0;
   display: flex;
   justify-content: center;
@@ -216,60 +215,62 @@ nav a:hover {
   padding-top: 25px;
   padding-bottom: 55px;
 }
+
 .benefits-box p,
 .benefits-box h4 {
   text-align: center;
   color: var(--white);
   line-height: 25px;
 }
+
 .benefits-box h4 {
   text-transform: uppercase;
 }
-.benefits-box1 {
-  width: 250px;
-  height: 350px;
-  background-color: var(--blue);
-  padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 8px var(--dark);
-  transition: transform 0.3s ease-in-out;
-}
-.benefits-box2 {
-  width: 250px;
-  height: 350px;
-  background-color: var(--light-blue);
-  padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 8px var(--dark);
-  transition: transform 0.3s ease-in-out;
-}
+
+.benefits-box0,
+.benefits-box1,
+.benefits-box2,
 .benefits-box3 {
   width: 250px;
   height: 350px;
-  background-color: var(--green);
-  padding: 40px 30px;
+  padding: 40px 20px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
-  transition: transform 0.3s ease-in-out;
+  opacity: 0; /* Początkowa widoczność */
+  transform: translateX(-50px); /* Początkowe przesunięcie */
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
 }
+
+/* Tło dla każdego kafelka */
 .benefits-box0 {
-  width: 250px;
-  height: 350px;
   background-color: var(--dark-blue);
-  padding: 40px 30px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 8px var(--dark);
-  transition: transform 0.3s ease-in-out;
+  transition-delay: 0s;
 }
-.benefits-box0:focus,
-.benefits-box0:hover,
-.benefits-box1:focus,
-.benefits-box1:hover,
-.benefits-box2:focus,
-.benefits-box2:hover,
-.benefits-box3:focus,
-.benefits-box3:hover {
-  transform: scale(1.05);
+
+.benefits-box1 {
+  background-color: var(--blue);
+  transition-delay: 0.3s;
+}
+
+.benefits-box2 {
+  background-color: var(--light-blue);
+  transition-delay: 0.6s;
+}
+
+.benefits-box3 {
+  background-color: var(--green);
+  transition-delay: 0.9s;
+}
+
+/* Klasa do uruchamiania animacji */
+.benefits-box0.show,
+.benefits-box1.show,
+.benefits-box2.show,
+.benefits-box3.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* services */
