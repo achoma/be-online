@@ -1,12 +1,12 @@
 #contact-item {
   margin-top: 100px;
-
   background-image: url(../images/contact.png);
 }
 #contact-item .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 #contact-item p {
   color: var(--light);
 }
@@ -21,9 +21,7 @@
   font-weight: normal;
   line-height: 40px;
 }
-.contact-content {
-  max-width: 50%;
-}
+
 .contact-content ul {
   display: inline-flex;
   gap: 50px;
@@ -31,16 +29,11 @@
 .contact-content ul svg {
   fill: var(--green);
 }
-#contact-item .contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 25px;
-}
+
 #contact-item .contact form {
-  max-width: 450px;
+  max-width: 100%;
 }
 #contact-item .contact-content-item {
   padding: 0;
-  width: 550px;
+  width: 100%;
 }

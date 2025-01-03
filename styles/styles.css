@@ -466,13 +466,37 @@ nav a:hover {
 }
 
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
   gap: 20px;
+  justify-content: center;
+  border: 1px solid red;
+  place-items: center;
+  display: grid;
 }
+@media screen and (min-width: 768px) {
+  .contact {
+    align-items: flex-start;
 
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    align-items: flex-start;
+
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}
+.contact-content {
+  border: 1px solid yellow;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: start;
+
+  width: 100%;
+}
 .contact-content ul {
   padding: 0;
   flex-wrap: wrap;
@@ -496,11 +520,13 @@ nav a:hover {
   line-height: 45px;
 }
 .contact-content-item {
+  border: 1px solid blue;
+
   padding: 0;
-  width: 650px;
+  width: 100%;
 }
 .contact form {
-  max-width: 550px;
+  max-width: 100%;
 }
 #name::placeholder,
 #email::placeholder,
