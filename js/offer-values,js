@@ -1,0 +1,25 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const textContent = document.querySelector(".text-content");
+  const imageContent = document.querySelector(".image-content");
+
+  // Sprawdzenie, czy elementy istnieją
+  if (textContent && imageContent) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 } // Animacja zacznie się, gdy element będzie w 20% widoczny
+    );
+
+    // Dodanie elementów do obserwatora
+    observer.observe(textContent);
+    observer.observe(imageContent);
+  } else {
+    console.error("Nie znaleziono elementów .text-content lub .image-content.");
+  }
+});
