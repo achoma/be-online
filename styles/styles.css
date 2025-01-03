@@ -468,7 +468,6 @@ nav a:hover {
 .contact {
   gap: 20px;
   justify-content: center;
-  border: 1px solid red;
   place-items: center;
   display: grid;
 }
@@ -489,7 +488,6 @@ nav a:hover {
   }
 }
 .contact-content {
-  border: 1px solid yellow;
   max-width: 100%;
   padding: 0;
   margin: 0;
@@ -520,8 +518,6 @@ nav a:hover {
   line-height: 45px;
 }
 .contact-content-item {
-  border: 1px solid blue;
-
   padding: 0;
   width: 100%;
 }
