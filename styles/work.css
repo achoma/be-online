@@ -18,7 +18,7 @@
   transform: translateX(-100%);
 }
 
-.work-box-1 .image-work {
+.work-box-1 .image-work1 {
   transform: translateX(100%);
 }
 
@@ -26,7 +26,7 @@
   transform: translateX(100%);
 }
 
-.work-box-2 .image-work {
+.work-box-2 .image-work2 {
   transform: translateX(-100%);
 }
 
@@ -38,7 +38,7 @@
   transform: translateX(0);
 }
 
-.work-box-1.visible .image-work {
+.work-box-1.visible .image-work1 {
   transform: translateX(0);
 }
 
@@ -46,7 +46,7 @@
   transform: translateX(0);
 }
 
-.work-box-2.visible .image-work {
+.work-box-2.visible .image-work2 {
   transform: translateX(0);
 }
 
