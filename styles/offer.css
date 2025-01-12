@@ -1,7 +1,7 @@
 #offer {
   margin-top: 90px;
   background-color: var(--light);
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 .offer-header {
@@ -13,7 +13,7 @@
 }
 .offer-box {
   padding-top: 8px;
-  height: 300px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,15 +31,28 @@
   transform: translateY(5px);
   box-shadow: 2px 4px 8px var(--dark-green);
 }
-
+.offer-boxes.active:hover,
+.offer-boxes.active:focus {
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.offer-boxes.active {
+  transform: translateY(0px);
+  background-color: var(--green);
+}
 .offer-box h4 {
   padding: 0;
   margin: 0;
 }
 .offer-header img {
   border-radius: 10px;
-  box-shadow: 18px 18px 1px var(--dark);
+  box-shadow: 18px 18px 1px var(--blue);
 }
 .offer-content {
-  padding-top: 80px;
+  /* padding-top: 80px; */
+}
+#offer-content {
+  padding-top: 40px;
+
+  background-color: var(--light);
+  padding-bottom: 60px;
 }
