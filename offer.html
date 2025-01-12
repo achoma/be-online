@@ -58,42 +58,36 @@
     </div>
     </header> 
     <main>
-<section id="offer">
-    <div class="container">
-        <div class="offer-header">
-            <div class="offer-box">
-                <div id="offer-www" class="offer-boxes"><h4>Strony internetowe</h4></div>
-                <div id="offer-shop" class="offer-boxes"><h4>Sklepy online</h4></div>
-                <div id="offer-support" class="offer-boxes"><h4>Administracja i wsparcie</h4></div>
+        <section id="offer">
+            <div class="container">
+                <div class="offer-header">
+                    <div class="offer-box">
+                        <div id="offer-www" class="offer-boxes" onclick="showOffer('www')">
+                            <h4>Strony internetowe</h4>
+                        </div>
+                        <div id="offer-shop" class="offer-boxes" onclick="showOffer('shop')">
+                            <h4>Sklepy online</h4>
+                        </div>
+                        <div id="offer-support" class="offer-boxes" onclick="showOffer('support')">
+                            <h4>Administracja i wsparcie</h4>
+                        </div>
+                    </div>
+                    <div class="offer-images">
+                        <img id="image-offer" src="images/offer.png" alt="our offer" height="300px"/>
+                        <img id="image-offer-www" src="images/offer-www.png" alt="our offer" height="300px" style="display: none;"/>
+                        <img id="image-offer-shop" src="images/offer-shop.png" alt="our offer" height="300px" style="display: none;"/>
+                        <img id="image-offer-support" src="images/offer-support.png" alt="our offer" height="300px" style="display: none;"/>
+                    </div>
+                </div>
+
+                <div class="offer-content">
+                    <div id="our-offer">to jest ogólny zarys oferty</div>
+                    <div id="our-offer-www" style="display: none;">nasza oferta stron internetowych</div>
+                    <div id="our-offer-shop" style="display: none;">nasza oferta sklepów online</div>
+                    <div id="our-offer-support" style="display: none;">nasza oferta wsparcia</div>
+                </div>
             </div>
-            <div class="offer-images">
-                <img id="image-offer" src="images/offer.png" alt="our offer" height="300px"/>
-                <img id="image-offer-www" src="images/offer-www.png" alt="our offer" height="300px"/>
-                <img id="image-offer-shop" src="images/offer-shop.png" alt="our offer" height="300px"/>
-                <img id="image-offer-support" src="images/offer-support.png" alt="our offer" height="300px"/>
-            </div>
-        </div>
-
-        <div class="offer-content">
-            <div id="our-offer">to jest ogólny zarys oferty</div>
-            <div id="our-offer-www">nasza oferta stron internetowych</div>
-            <div id="our-offer-shop">nasza oferta sklepów online</div>
-            <div id="our-offer-support">nasza oferta wsparcia </div>
-        </div>
-
-
-
-    </div>
-</section>
-<section></section>
-
-
-
-
-
-
-
-
+        </section>
 
     </main>
 
@@ -186,9 +180,10 @@ Skontaktuj się z nami</h3>
       </div>
 
     </div>
-      <script src="./js/contact-modal.js"></script>
-          <script type="module" src="./js/contect-form.js"></script>
-                    <script type="module" src="./js/header.js"></script>
+    <script src="./js/contact-modal.js"></script>
+    <script src="./js/contect-form.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/offer.js"></script>
 
 
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
