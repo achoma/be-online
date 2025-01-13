@@ -1,0 +1,209 @@
+#offer {
+  margin-top: 90px;
+  background-color: var(--light);
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.offer-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 30px;
+}
+.offer-box {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.offer-boxes {
+  background-color: var(--white);
+  max-width: 260px;
+  padding: 26px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+  transition: transform 0.3s ease-in-out;
+}
+.offer-boxes:hover,
+.offer-boxes:focus {
+  transform: translateY(5px);
+  box-shadow: 2px 4px 8px var(--dark-green);
+}
+.offer-boxes.active:hover,
+.offer-boxes.active:focus {
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.offer-boxes.active {
+  transform: translateY(0px);
+  background-color: var(--green);
+}
+.offer-box h4 {
+  padding: 0;
+  margin: 0;
+}
+.offer-header img {
+  border-radius: 10px;
+  box-shadow: 18px 18px 1px var(--blue);
+}
+
+#offer-content {
+  padding-top: 40px;
+  background-color: var(--light);
+  padding-bottom: 1px;
+}
+.offer-box-www {
+  flex-wrap: wrap;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 25px;
+}
+.offer-boxes-www {
+  background-color: var(--white);
+  width: 350px;
+  height: 690px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.offer-boxes-www h3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.offer-boxes-www h4,
+.offer-boxes-www p,
+.offer-boxes-www ul {
+  text-align: left;
+  margin: 0;
+  padding: 8px 20px;
+  line-height: 25px;
+}
+.offer-boxes-www ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.offer-box-shop {
+  flex-wrap: wrap;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 25px;
+}
+.offer-boxes-shop {
+  background-color: var(--white);
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 600px;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.offer-boxes-shop h3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.offer-boxes-shop h4,
+.offer-boxes-shop p,
+.offer-boxes-shop ul {
+  text-align: left;
+  margin: 0;
+  padding: 8px 20px;
+  line-height: 25px;
+}
+.offer-boxes-shop ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+.offer-box-support {
+  flex-wrap: wrap;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 25px;
+}
+.offer-boxes-support {
+  background-color: var(--white);
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  padding-bottom: 16px;
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.offer-boxes-support h3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.offer-boxes-support h4,
+.offer-boxes-support p,
+.offer-boxes-support ul {
+  text-align: left;
+  margin: 0;
+  padding: 8px 20px;
+  line-height: 25px;
+}
+.offer-boxes-support ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+.offer-box-learn {
+  flex-wrap: wrap;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 25px;
+}
+.offer-boxes-learn {
+  background-color: var(--white);
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  padding-bottom: 16px;
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.offer-boxes-learn h3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.offer-boxes-learn h4,
+.offer-boxes-learn p,
+.offer-boxes-learn ul {
+  text-align: left;
+  margin: 0;
+  padding: 8px 20px;
+  line-height: 25px;
+}
+.offer-boxes-learn ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+#offer-button {
+  padding-top: 1px;
+  background-color: var(--light);
+  padding-bottom: 60px;
+}
