@@ -12,7 +12,6 @@
   padding-top: 30px;
 }
 .offer-box {
-  padding-top: 8px;
   height: 320px;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
 .offer-boxes {
   background-color: var(--white);
   max-width: 260px;
-  padding: 30px;
+  padding: 26px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
   transition: transform 0.3s ease-in-out;
