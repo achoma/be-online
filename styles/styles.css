@@ -20,6 +20,8 @@
 }
 
 body {
+  /* height: 2000px;  */
+
   font-family: "Roboto", sans-serif;
 }
 
@@ -130,7 +132,46 @@ button {
 .green {
   background-color: var(--green);
 }
+/* scroll button  */
+/* Styl przycisku */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px var(--dark);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
 
+#scrollToTop svg {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  fill: var(--white);
+  width: 34px;
+  height: 34px;
+}
+
+/* Widoczność przycisku po przewinięciu */
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
 /*---------------------------------
           HEADER
   ----------------------------------*/
