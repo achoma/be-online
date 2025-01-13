@@ -96,20 +96,22 @@
 .offer-box-shop {
   flex-wrap: wrap;
   padding: 0;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding-top: 25px;
   padding-bottom: 55px;
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
+  /* display: grid;
+  grid-template-columns: 0.5fr 0.5fr; */
 }
 .offer-boxes-shop {
   background-color: var(--white);
   width: 100%;
-  /* min-width: 100px; */
-  height: auto;
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 600px;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
 }
