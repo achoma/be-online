@@ -19,6 +19,10 @@ function showOffer(type) {
     document.getElementById("image-offer-shop").style.display = "block";
     document.getElementById("our-offer-shop").style.display = "block";
     document.getElementById("offer-shop").classList.add("active");
+  } else if (type === "learn") {
+    document.getElementById("image-offer-learn").style.display = "block";
+    document.getElementById("our-offer-learn").style.display = "block";
+    document.getElementById("offer-learn").classList.add("active");
   } else if (type === "support") {
     document.getElementById("image-offer-support").style.display = "block";
     document.getElementById("our-offer-support").style.display = "block";

@@ -46,9 +46,7 @@
   border-radius: 10px;
   box-shadow: 18px 18px 1px var(--blue);
 }
-.offer-content {
-  /* padding-top: 80px; */
-}
+
 #offer-content {
   padding-top: 40px;
   background-color: var(--light);
@@ -169,6 +167,44 @@
   line-height: 25px;
 }
 .offer-boxes-support ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+.offer-box-learn {
+  flex-wrap: wrap;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+.offer-boxes-learn {
+  background-color: var(--white);
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  padding-bottom: 16px;
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.offer-boxes-learn h3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.offer-boxes-learn h4,
+.offer-boxes-learn p,
+.offer-boxes-learn ul {
+  text-align: left;
+  margin: 0;
+  padding: 8px 20px;
+  line-height: 25px;
+}
+.offer-boxes-learn ul {
   list-style: disc;
   padding-left: 30px;
 }
