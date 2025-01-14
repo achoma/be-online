@@ -753,16 +753,23 @@ footer svg :hover {
   max-height: 40px;
   fill: var(--dark);
   color: var(--dark);
-  background-color: #20a0c7;
 
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu-toggle use {
-  color: #000f27;
-  fill: var(--dark);
+.hamburger-icon:hover,
+.hamburger-icon:focus {
+  fill: var(--green);
+
+  color: var(--green);
+}
+.menu-toggle svg {
+  color: var(--dark);
+}
+.menu-toggle svg:hover,
+.menu-toggle svg:focus {
+  color: var(--light);
 }
 .menu-container {
   position: fixed;
@@ -794,7 +801,7 @@ footer svg :hover {
   width: 30px;
   height: 30px;
   background-color: var(--light-grey);
-  fill: var(--dark-green);
+  color: var(--green);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .menu-container .menu-toggle:hover,
@@ -862,4 +869,7 @@ footer svg :hover {
 .menu-mobile a:focus {
   color: var(--green);
   text-decoration: underline;
+}
+.button-close svg {
+  color: var(--light);
 }
