@@ -1,8 +1,20 @@
 #portfolio {
-  margin-top: 90px;
   background-color: var(--light);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media screen and (min-width: 1200px) {
+  #portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .portfolio-image {
   padding-top: 60px;
