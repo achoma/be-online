@@ -51,16 +51,16 @@
 .offer-boxes {
   align-content: center;
   background-color: var(--white);
-  max-height: 90px;
+  max-height: 70px;
   height: 100%;
   width: 100%;
-  max-width: 185px;
+  max-width: 260px;
   padding: 26px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
   transition: transform 0.3s ease-in-out;
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .offer-boxes {
     max-height: 70px;
     height: 100%;
@@ -68,7 +68,7 @@
     max-width: 260px;
     padding: 26px;
   }
-}
+} */
 .offer-boxes:hover,
 .offer-boxes:focus {
   transform: translateY(5px);
