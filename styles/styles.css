@@ -87,7 +87,13 @@ button {
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
-
+.cta {
+  color: var(--white);
+}
+.cta:hover,
+.cta:focus {
+  text-decoration: underline;
+}
 .myBtn {
   border-radius: 10px;
   border: none;
@@ -163,6 +169,39 @@ button {
 /*------------------------------------------------------------------
           HEADER
   ---------------------------------------------------------------*/
+.green-header {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .green-header {
+    align-items: center;
+    justify-content: right;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .green-header {
+    align-items: center;
+    justify-content: right;
+    display: flex;
+  }
+}
+.green-header a {
+  color: var(--white);
+}
+.green-header a:hover,
+.green-header a:focus {
+  text-decoration: underline;
+}
+.green-header svg {
+  fill: var(--white);
+  color: var(--white);
+  width: 24px;
+  height: 24px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
 header {
   border-bottom: 0.5px solid var(--light-grey);
   width: 100%;

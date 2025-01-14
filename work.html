@@ -36,8 +36,25 @@
     />
   </head>
   <body>
-    <header id="header"> 
-         <div class="container ">
+    <header id="header">
+      <div class="green">
+        <div class="container green-header">
+          <div >
+              <svg >
+                  <use href="./images/symbol-defs.svg#icon-phone-square" ></use>
+              </svg>
+          </div>
+          <p><a href="tel:+48509016515">+48 509 016 515 </a></p>
+          <div>
+              <svg >
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg> 
+          </div> 
+          <p> <a href="mailto:kontakt@be-online.com.pl">kontakt@be-online.com.pl  </a></p>
+      </div>
+    </div>
+      <div class="container ">
+
       <div class="header-content">
         <a href="./index.html"><img src="images/logo.png" alt="author logo" width="250" /></a>
         <nav>
@@ -88,30 +105,30 @@
         <ul class="contact-item-mobile contact-mobile-icon">
           <li>
             <div >
-              <a href="tel:+48509016515">
+              
                 <svg >
                   <use href="./images/symbol-defs.svg#icon-phone-square" 
                   
                   ></use>
                 </svg>
-              </a>
+             
             </div>
-        <p>+48 509 016 515</p></li>
+        <p><a href="tel:+48509016515">+48 509 016 515 </a></p></li>
         <li>
           <div>
-            <a href="mailto:kontakt@be-online.com.pl">
+           
               <svg >
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg> 
-            </a>
+          
           </div>
           
-        <p>kontakt@be-online.com.pl</p></li>
+        <p> <a href="mailto:kontakt@be-online.com.pl">kontakt@be-online.com.pl  </a></p></li>
           </ul>
          
       </div>
       </div>
-    </header> 
+    </header>  
         <main>
 <section id="working">  
 <div class="container content"><h4>Tworzenie strony internetowej to proces, który wymaga przemyślanego podejścia, 
@@ -295,7 +312,7 @@ Skontaktuj się z nami</h3>
             <label for="accept">
   <div class="privacy">
     <input type="checkbox" id="privacy" required />
-    <p>Akceptuję regulamin <a href="#">Polityki Prywatności</a></p>
+    <p>Akceptuję regulamin <a href="./privacy.html" target="_blank" rel="noreferrer noopener">Polityki Prywatności</a></p>
   </div>
   </label>
 
@@ -307,15 +324,15 @@ Skontaktuj się z nami</h3>
           <li> <svg height="24" width="24">
                     <use href="./images/symbol-defs.svg#icon-mail"></use>
                 </svg>
-            <p> kontakt@be-online.com.pl</p></li>
+            <p><a class="cta" href="mailto:kontakt@be-online.com.pl"> kontakt@be-online.com.pl</a></p></li>
           <li><svg height="24" width="24">
                     <use href="./images/symbol-defs.svg#icon-phone-square"></use>
-                </svg><p> +48 509 016 515</p></li>
+                </svg><p><a class="cta" href="tel:+48509016515"> +48 509 016 515</a></p></li>
         </ul></div>
                     </div>
       </div>
 
-    </div>
+    <!-- </div> -->
         <div>    
         <button id="scrollToTop" aria-label="Powrót na górę">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -331,7 +348,7 @@ Skontaktuj się z nami</h3>
       <script src="./js/mobile-menu.js"></script>
 
 
-     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
   </body>
 </html>
