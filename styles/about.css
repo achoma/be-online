@@ -1,5 +1,4 @@
 #offer-hero {
-  margin-top: 90px;
   width: 100%;
   height: 100%;
   background-color: var(--dark, #2e2f42);
@@ -8,11 +7,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 122px;
+  padding-top: 100px;
   padding-bottom: 85px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  #offer-hero {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #offer-hero {
+    padding-top: 110px;
+  }
+}
+
 #offer-mission {
   background-color: var(--white);
   padding-top: 60px;
@@ -20,30 +31,54 @@
 }
 #offer-values {
   background-color: var(--light);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
+@media screen and (min-width: 1200px) {
+  #offer-values {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #offer-values {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+/* 
 .offer-values-content {
   gap: 20px;
   justify-content: center;
   place-items: center;
   display: grid;
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
-}
-@media screen and (min-width: 768px) {
-  .offer-values-content {
-    align-items: flex-start;
+  background-image: linear-gradient(
+      to bottom,
 
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-  }
+      var(--grey, rgba(249, 247, 248, 0.7)),
+      var(--grey, rgba(249, 247, 248, 0.7))
+    ),
+    url(../images/image-about2.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.offer-values-content {
+  align-items: flex-start;
+  background-color: var(--light);
+  background-image: none;
+  background-position: center;
 }
+
 @media screen and (min-width: 1200px) {
   .offer-values-content {
-    align-items: flex-start;
-
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
   }
@@ -58,11 +93,17 @@
   transition-delay: 0.6s;
 }
 .image-content {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 18px 18px 1px var(--dark);
-  transform: translateX(100px);
-  transition-delay: 0.6s;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .image-content {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 18px 18px 1px var(--dark);
+    transform: translateX(100px);
+    transition-delay: 0.6s;
+  }
 }
 .offer-values-content p {
   text-align: justify;

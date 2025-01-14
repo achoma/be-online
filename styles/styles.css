@@ -3,15 +3,11 @@
   --blue: #385f86;
   --lightest-blue: #20a0c7;
   --light-blue: #2887a5;
-
   --dark-blue: #162d5b;
   --light-green: #77c146;
-
   --green: #5fa134;
-
   --dark-green: #3a6120;
   --light-grey: #d9d9d9bd;
-
   --light: #f4f4f4;
   --white: #fff;
 }
@@ -20,26 +16,28 @@
 }
 
 body {
-  /* height: 2000px;  */
-
   font-family: "Roboto", sans-serif;
 }
-
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  border: 1px solid red;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* overflow: hidden; */
 }
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 20px;
   }
-} */
-/* @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 0 20px;
   }
-} */
+}
 h1 {
   color: var(--white);
   font-weight: 600;
@@ -50,7 +48,6 @@ h1 {
 }
 h2 {
   color: var(--blue);
-  /* text-shadow: 1px 1px 2px var(--dark); */
   font-weight: 600;
   font-size: 32px;
   margin-top: 0;
@@ -61,7 +58,6 @@ h3 {
   color: var(--white);
   font-weight: 400;
   font-size: 20px;
-  /* letter-spacing: 2px; */
   margin-top: 0;
   line-height: 35px;
 }
@@ -69,7 +65,6 @@ h4 {
   color: var(--dark);
   font-weight: 600;
   font-size: 18px;
-  /* letter-spacing: 1.3px; */
   margin-top: 0;
 }
 p {
@@ -132,8 +127,9 @@ button {
 .green {
   background-color: var(--green);
 }
-/* scroll button  */
-/* Styl przycisku */
+/*--------------------------------------------------------------
+          scroll button
+  --------------------------------------------------------------*/
 #scrollToTop {
   position: fixed;
   bottom: 20px;
@@ -161,29 +157,23 @@ button {
   height: 30px;
 }
 
-/* Widoczność przycisku po przewinięciu */
 #scrollToTop.show {
   opacity: 1;
   visibility: visible;
 }
-/*---------------------------------
+/*------------------------------------------------------------------
           HEADER
-  ----------------------------------*/
+  ---------------------------------------------------------------*/
 header {
-  position: fixed;
-  top: 0;
+  border-bottom: 0.5px solid var(--light-grey);
   width: 100%;
   background-color: var(--white);
-  transform: translateY(0);
-  transition: transform 0.3s ease-in-out;
 }
+
 @media screen and (max-width: 768px) {
   nav {
     display: none;
   }
-}
-header.hidden {
-  transform: translateY(-100%);
 }
 
 .header-content {
@@ -203,10 +193,14 @@ nav ul {
 }
 
 nav a {
-  padding: 10px 15px;
+  padding: 10px 5px;
   background-color: transparent;
   color: var(--dark);
-  /* font-weight: 700; */
+}
+@media screen and (min-width: 1200px) {
+  nav a {
+    padding: 10px 15px;
+  }
 }
 .is-active {
   color: var(--green);
@@ -216,11 +210,10 @@ nav a:hover {
   color: var(--light-blue);
   text-decoration: underline;
 }
-/*---------------------------------
+/*--------------------------------------------------------------------
           HERO
-  ----------------------------------*/
+  ----------------------------------------------------------------*/
 #hero {
-  margin-top: 90px;
   width: 100%;
   height: 100%;
   background-color: var(--dark, #2e2f42);
@@ -229,21 +222,40 @@ nav a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 122px;
+  padding-top: 100px;
   padding-bottom: 85px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  #hero {
+    padding-top: 120px;
+  }
+}
+
 .hero-tekst {
   margin-bottom: 48px;
 }
-/*---------------------------------
+/*-------------------------------------------------------------------
           BENEFITS
-  ----------------------------------*/
+  -----------------------------------------------------------------*/
 #benefits {
   background-color: var(--light);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media screen and (min-width: 1200px) {
+  #benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .benefits-box {
   flex-wrap: wrap;
@@ -251,9 +263,15 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding-top: 25px;
-  padding-bottom: 55px;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits-box {
+    gap: 40px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+  }
 }
 
 .benefits-box p,
@@ -276,8 +294,8 @@ nav a:hover {
   padding: 40px 20px;
   border-radius: 10px;
   box-shadow: 2px 4px 8px var(--dark);
-  opacity: 0; /* Początkowa widoczność */
-  transform: translateX(-50px); /* Początkowe przesunięcie */
+  opacity: 0;
+  transform: translateX(-50px);
   transition:
     opacity 0.5s ease-in-out,
     transform 0.5s ease-in-out;
@@ -319,12 +337,26 @@ nav a:hover {
   opacity: 1;
   transform: translateX(0);
 }
-
-/* services */
+/*-------------------------------------------------------------------
+          services
+  ------------------------------------------------------------------*/
 #services {
   background-color: var(--white);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media screen and (min-width: 1200px) {
+  #services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .services-box {
   flex-wrap: wrap;
@@ -333,8 +365,14 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits-box {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
 }
 .services-box p,
 .services-box h4 {
@@ -433,13 +471,29 @@ nav a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
+/*-----------------------------------------------------------------
+          realizations
+  -----------------------------------------------------------------*/
 #realizations {
   background-color: var(--light);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   display: flex;
-
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  #benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .carousel {
   position: relative;
@@ -498,14 +552,27 @@ nav a:hover {
 .dot.active {
   background-color: var(--dark);
 }
-
-/* KONTAKT */
+/*----------------------------------------------------------------
+          KONTAKT
+  ---------------------------------------------------------------*/
 #contact {
   background-color: var(--blue);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media screen and (min-width: 1200px) {
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  #contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .contact {
   gap: 20px;
   justify-content: center;
@@ -515,7 +582,6 @@ nav a:hover {
 @media screen and (min-width: 768px) {
   .contact {
     align-items: flex-start;
-
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
   }
@@ -523,7 +589,6 @@ nav a:hover {
 @media screen and (min-width: 1200px) {
   .contact {
     align-items: flex-start;
-
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
   }
@@ -533,17 +598,21 @@ nav a:hover {
   padding: 0;
   margin: 0;
   align-items: start;
-
   width: 100%;
 }
 .contact-content ul {
+  display: block;
   padding: 0;
-  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .contact-content ul {
+    gap: 40px;
+  }
 }
 .contact-content li {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-
   gap: 15px;
 }
 .contact-content svg {
@@ -611,7 +680,9 @@ nav a:hover {
 .privacy a:hover {
   text-decoration: underline;
 }
-/* FOOTER */
+/*-----------------------------------------------------------------
+          FOOTER
+  -------------------------------------------------------------------*/
 footer {
   background-color: var(--white);
 }
@@ -656,9 +727,9 @@ footer svg :hover {
   gap: 50px;
   margin-top: 40px;
 }
-/*---------------------------------
+/*----------------------------------------------------------------
           MOBILE MENU
-  ----------------------------------*/
+  --------------------------------------------------------------------*/
 .menu-toggle {
   display: flex;
   margin-right: 8px;
