@@ -10,6 +10,9 @@
   gap: 30px;
   /* padding-top: 30px; */
 }
+#our-offer h4 {
+  text-align: center;
+}
 /* 
 @media screen and (min-width: 1200px) {
   .offer-header {
