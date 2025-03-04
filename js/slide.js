@@ -4,7 +4,6 @@ const prevButton = document.querySelector(".left-arrow");
 const nextButton = document.querySelector(".right-arrow");
 const dotsNav = document.querySelector(".carousel-dots");
 
-// Create dots
 slides.forEach((_, index) => {
   const dot = document.createElement("div");
   dot.classList.add("dot");

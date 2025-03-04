@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const boxes = document.querySelectorAll(
-    ".benefits-box0, .benefits-box1, .benefits-box2, .benefits-box3"
-  );
+  const boxes = document.querySelectorAll(".benefits-box0, .benefits-box1, .benefits-box2, .benefits-box3");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -12,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.1, // Procent widoczności elementu, po którym animacja się uruchomi
+      threshold: 0.1,
     }
   );
 

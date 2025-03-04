@@ -1,16 +1,13 @@
 function showOffer(type) {
-  // Remove active class from all offer boxes
   const offerBoxes = document.querySelectorAll(".offer-boxes");
   offerBoxes.forEach((box) => box.classList.remove("active"));
 
-  // Hide all images and content
   const images = document.querySelectorAll(".offer-images img");
   const contents = document.querySelectorAll(".offer-content > div");
 
   images.forEach((img) => (img.style.display = "none"));
   contents.forEach((content) => (content.style.display = "none"));
 
-  // Show specific content based on type
   if (type === "www") {
     document.getElementById("image-offer-www").style.display = "block";
     document.getElementById("our-offer-www").style.display = "block";
@@ -33,5 +30,4 @@ function showOffer(type) {
   }
 }
 
-// Default state: show general offer
 showOffer();

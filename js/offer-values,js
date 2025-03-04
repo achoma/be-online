@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const textContent = document.querySelector(".text-content");
   const imageContent = document.querySelector(".image-content");
 
-  // Sprawdzenie, czy elementy istnieją
   if (textContent && imageContent) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -13,10 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      { threshold: 0.2 } // Animacja zacznie się, gdy element będzie w 20% widoczny
+      { threshold: 0.2 }
     );
 
-    // Dodanie elementów do obserwatora
     observer.observe(textContent);
     observer.observe(imageContent);
   } else {
