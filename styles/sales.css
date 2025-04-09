@@ -1,0 +1,19 @@
+.sales {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+  background-image: url(../images/hero.webp);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sales-header {
+  background-color: var(--light);
+  margin-top: -60px;
+  margin-bottom: 60px;
+}
