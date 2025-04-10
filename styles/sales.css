@@ -72,6 +72,7 @@
 }
 
 .overlay1 {
+  padding: 10px;
   background-color: var(--dark);
   text-align: center;
   font-weight: 400;
@@ -110,146 +111,14 @@
   background-color: transparent;
   transform: translateY(8px);
 }
-
-/* **************************************************** */
-.sales-nav ul {
-  font-weight: 500;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: 20px;
+.sales-contact {
+  padding: 90px 0;
+  background-color: var(--blue);
 }
-.sales-nav a {
-  padding: 10px 5px;
-  background-color: transparent;
-  color: var(--dark);
-}
-.sales-nav a:hover {
-  color: var(--light-blue);
-  text-decoration: underline;
-}
-/* *********** */
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-.hero button {
+.sales-contact h3 {
+  color: var(--light);
+  font-size: 32px;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-.myBtn {
-  border-radius: 10px;
-  border: none;
-  text-decoration: none;
-  padding: 10px 30px;
-  color: white;
-  background-color: var(--green);
-  box-shadow: 0px 5px 0px 0px var(--dark-green);
-  transition: transform 0.3s ease-in-out;
-}
-
-.myBtn:hover {
-  transform: translateY(4px);
-  color: white;
-  background-color: var(--light-green);
-}
-
-.section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-.section h3 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.feature {
-  flex: 1 1 250px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-.feature i {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #00bcd4;
-}
-
-.steps ol {
-  list-style: decimal inside;
-  max-width: 700px;
-  margin: auto;
-}
-.steps ol li {
-  margin: 15px 0;
-}
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-.portfolio img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.testimonial {
-  font-style: italic;
-  text-align: center;
-  margin-top: 30px;
-}
-
-form {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: auto;
-}
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-form button {
-  padding: 12px 25px;
-  background: #00bcd4;
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-form button:hover {
-  background: #019caf;
-}
-footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 60px;
+  padding-bottom: 40px;
+  font-weight: 600;
 }

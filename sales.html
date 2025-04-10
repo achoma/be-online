@@ -60,7 +60,6 @@
       </div>
     </div>
   </section>
-
   <section id="sales-about" class="sales-about" >
     <div class="container">
       <h3>Dlaczego warto z&nbsp;nami?</h3>
@@ -150,36 +149,77 @@
           </div>
       </div>
   </section>
-  <section class="section steps">
+  <!-- <section class="section steps">
     <h3>Jak wygląda współpraca?</h3>
     <ol>
       <li>Wypełnij formularz kontaktowy</li>
       <li>Omówimy Twoje potrzeby i&nbsp;ustalimy zakres</li>
       <li>Otrzymasz gotową stronę i&nbsp;wsparcie</li>
     </ol>
-  </section>
-  <section class="section" id="portfolio">
-    <h3>Nasze realizacje</h3>
-    <div class="portfolio">
-      <img src="https://source.unsplash.com/400x300/?website,design" alt="Realizacja 1" />
-      <img src="https://source.unsplash.com/400x300/?code,project" alt="Realizacja 2" />
-      <img src="https://source.unsplash.com/400x300/?web,interface" alt="Realizacja 3" />
-    </div>
-    <div class="testimonial">
-      <p>"Dzięki stronie od be-online moja firma zyskała profesjonalny wizerunek i więcej klientów!" – Klient Barterowy</p>
-    </div>
-  </section>
+  </section> -->
 
-  <section class="section" id="kontakt">
-    <h3>Skontaktuj się z nami</h3>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Imię i nazwisko" required />
-      <input type="email" name="email" placeholder="Adres e-mail" required />
-      <input type="tel" name="phone" placeholder="Numer telefonu (opcjonalnie)" />
-      <textarea name="message" rows="5" placeholder="Opisz swój projekt..." required></textarea>
-      <button class="myBtn" type="submit">Wyślij</button>
-    </form>
+  <section id="kontakt" class="sales-contact" >
+    <div class="container contact">
+      <h3>Porozmawiajmy o Twojej stronie</h3>
+      <div class="contact-content-item">
+        <form id="contactForm"  action="https://formspree.io/f/xyzyqjrd"  method="POST">
+            <label for="name">
+              <div>
+                <input id="name" type="text" placeholder="Twoje imię"name="name" required />
+              </div>
+            </label>
+            <label for="email">
+              <div>
+                <input id="email" type="email" placeholder="E-mail" name="email" required />
+              </div>
+            </label>
+                  <label for="name" >
+              <div>
+                <input id="phone" type="phone" placeholder="Nr telefonu (opcjonalnie)"name="name"  />
+              </div>
+            </label>
+            <label for="phone">
+              <div>
+                <input id="subject" type="test" placeholder="Temat"name="subject" />
+              </div>
+            </label>
+            <label></label>
+              <div>
+                <textarea id="message" type="text" placeholder="Twoja wiadomość"name="comment"></textarea>
+              </div>
+            </label>
+            <label for="accept">
+              <div class="privacy">
+                <input type="checkbox" id="privacy" required />
+                <p>Akceptuję regulamin <a href="./privacy.html" target="_blank" rel="noreferrer noopener">Polityki Prywatności</a></p>
+              </div>
+            </label>
+            <div>
+              <input type="text" name="_gotcha" style="display:none">
+              <button class="btn myBtn" type="submit">Wyślij wiadomość</button>
+            </div>
+        </form>
+      </div>
+    </div>
   </section>
-
+  <footer >   
+    <div class="footer-content container">
+      <a href="https://www.be-online.com.pl/">
+        <img src="images/logo (1).webp" alt="author logo" width="250" />
+      </a>
+        <div class="footer-content-item">
+          <a id="sm" href="https://www.facebook.com/be.online.services" target="_blank" rel="noreferrer noopener">
+            <svg height="24"  width="24">
+              <use href="./images/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+          </a>
+          <a id="sm"  href="https://www.instagram.com/be.online.services/" target="_blank" rel="noreferrer noopener">
+            <svg height="24" width="24">
+              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    <div class="footer"><p>© 2024 be-online. Wszelkie prawa zastrzeżone.</p></div>
+  </footer>
 </html>
-</br>
