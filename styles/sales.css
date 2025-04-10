@@ -17,15 +17,15 @@
   justify-content: center;
   display: flex;
 }
-.sales-services {
-  padding: 120px 0;
+.sales-about {
+  padding: 90px 0;
   background-color: var(--light-grey);
 }
-.sales-services h3 {
+.sales-about h3 {
   color: var(--dark-blue);
   font-size: 32px;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   font-weight: 600;
 }
 .features {
@@ -50,6 +50,67 @@
   text-align: center;
   font-weight: 600;
 }
+.portfolio-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-image-container {
+  flex: 1 1 250px;
+  justify-content: center;
+  box-shadow: 2px 4px 8px var(--dark);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-image-container img {
+  width: 100%;
+  display: block;
+}
+
+.overlay1 {
+  background-color: var(--dark);
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: left 0.5s ease;
+}
+
+.portfolio-image-container:hover .overlay1 {
+  left: 0;
+}
+.portfolio-image-container h4 {
+  text-transform: uppercase;
+}
+
+.portfolio-image-container p,
+.portfolio-image-container h4 {
+  text-align: center;
+  color: var(--light);
+}
+.portfolio-image-container .myBtn {
+  margin-top: 20px;
+  background: transparent;
+  box-shadow: 0px 5px 0px 0px var(--light-grey);
+  border: solid 0.5px var(--light);
+  transition: transform 0.3s ease-in-out;
+}
+.portfolio-image-container .myBtn:hover,
+.portfolio-image-container .myBtn:focus {
+  background-color: transparent;
+  transform: translateY(8px);
+}
+
 /* **************************************************** */
 .sales-nav ul {
   font-weight: 500;
