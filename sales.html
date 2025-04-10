@@ -22,16 +22,8 @@
         <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap""
         rel="stylesheet" />
-        <link rel="stylesheet" href="./styles/about.css" />
-        <link rel="stylesheet" href="./styles/work.css" />
-
-        <link rel="stylesheet" href="./styles/contect.css" />
-        <link rel="stylesheet" href="./styles/offer.css" />
-        <link rel="stylesheet" href="./styles/portfolio.css" />
-
-        <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="stylesheet" href="./styles/sales.css" />
-
+        <link rel="stylesheet" href="./styles/styles.css" />
         <link rel="stylesheet" href="./styles/contact-modal.css" />
 
         <link
@@ -42,27 +34,78 @@
             referrerpolicy="no-referrer"
         />
     </head>
-    <body>
-        <section class="sales">
-            <div class="sales-header">
-                <a href="./index.html"><img src="images/logo (1).webp" alt="author logo" width="250" /></a>
-            </div>
-            <div class="container">
-                <h1>Profesjonalne strony internetowe</br> dla Twojego biznesu</h1>
-                <h3>Szybka realizacja i indywidualne podejście!</h3>
-                <button class="myBtn">Zamów bezpłatną konsultację</button>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2>Dlaczego warto?</h2>
-                <ul>
-                    <li>Szybka realizacja (7 dni roboczych)</li>
-                    <li>Indywidualne podejście</li>
-                    <li>Wsparcie 3 miesiące wsparcia technicznego gratis</li>
-                </ul>
-            </div>
-        </section>
-    </body>
+<body>
+  <header>
+    <div class="container header-content">
+        <img src="images/logo (1).webp" alt="author logo" width="180" />
+        <div class="sales-nav">
+            <ul>
+                <li><a href="#uslugi">Usługi</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>   
+            </ul>
+        </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Tworzymy strony internetowe, które sprzedają</h2>
+    <p>Szybka realizacja, indywidualne podejście i pełne wsparcie techniczne</p>
+    <button class="myBtn" onclick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' })"
+    >Zamów konsultację</button>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Dlaczego warto z nami?</h3>
+    <div class="features">
+      <div class="feature">
+        <i class="fa-solid fa-rocket"></i>
+        <h4>Szybka realizacja</h4>
+        <p>Twoja strona gotowa nawet w 7 dni roboczych.</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-user-check"></i>
+        <h4>Indywidualne podejście</h4>
+        <p>Projekt dopasowany do Twojej branży i celów.</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-headset"></i>
+        <h4>Wsparcie techniczne</h4>
+        <p>Bezpłatne wsparcie przez 3 miesiące po uruchomieniu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section steps">
+    <h3>Jak wygląda współpraca?</h3>
+    <ol>
+      <li>Wypełnij formularz kontaktowy</li>
+      <li>Omówimy Twoje potrzeby i ustalimy zakres</li>
+      <li>Otrzymasz gotową stronę i wsparcie</li>
+    </ol>
+  </section>
+  <section class="section" id="portfolio">
+    <h3>Nasze realizacje</h3>
+    <div class="portfolio">
+      <img src="https://source.unsplash.com/400x300/?website,design" alt="Realizacja 1" />
+      <img src="https://source.unsplash.com/400x300/?code,project" alt="Realizacja 2" />
+      <img src="https://source.unsplash.com/400x300/?web,interface" alt="Realizacja 3" />
+    </div>
+    <div class="testimonial">
+      <p>"Dzięki stronie od be-online moja firma zyskała profesjonalny wizerunek i więcej klientów!" – Klient Barterowy</p>
+    </div>
+  </section>
+
+  <section class="section" id="kontakt">
+    <h3>Skontaktuj się z nami</h3>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Imię i nazwisko" required />
+      <input type="email" name="email" placeholder="Adres e-mail" required />
+      <input type="tel" name="phone" placeholder="Numer telefonu (opcjonalnie)" />
+      <textarea name="message" rows="5" placeholder="Opisz swój projekt..." required></textarea>
+      <button class="myBtn" type="submit">Wyślij</button>
+    </form>
+  </section>
+
 </html>
 </br>
