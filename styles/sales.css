@@ -1,22 +1,56 @@
-:root {
-  --dark: #000f27;
-  --blue: #385f86;
-  --lightest-blue: #20a0c7;
-  --light-blue: #2887a5;
-  --dark-blue: #162d5b;
-  --light-green: #77c146;
-  --green: #5fa134;
-  --dark-green: #3a6120;
-  --light-grey: #d9d9d9bd;
-  --light: #f4f4f4;
-  --white: #fff;
+.sales-hero h1 {
+  color: var(--light);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.sales-hero h3 {
+  padding-bottom: 50px;
+  color: var(--light);
 }
-
+.sales-hero {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0;
+  background-color: var(--dark);
+}
+.sales-btn {
+  gap: 46px;
+  justify-content: center;
+  display: flex;
+}
+.sales-services {
+  padding: 120px 0;
+  background-color: var(--light-grey);
+}
+.sales-services h3 {
+  color: var(--dark-blue);
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 60px;
+  font-weight: 600;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.features div {
+  box-shadow: 2px 4px 8px var(--dark);
+}
+.feature {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.feature h4 {
+  color: var(--dark-blue);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+/* **************************************************** */
 .sales-nav ul {
   font-weight: 500;
   list-style: none;
@@ -38,12 +72,6 @@
 }
 /* *********** */
 
-.hero {
-  background-image: url(../images/hero.webp);
-  color: #fff;
-  padding: 100px 20px;
-  text-align: center;
-}
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -72,9 +100,7 @@
   color: white;
   background-color: var(--light-green);
 }
-#services {
-  background-color: var(--light-grey);
-}
+
 .section {
   padding: 60px 20px;
   max-width: 1100px;
