@@ -36,16 +36,16 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2M100JK9RT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M100JK9RT"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-  gtag('config', 'G-2M100JK9RT');
-</script>
-    </head>
+          gtag('config', 'G-2M100JK9RT');
+        </script>
+</head>
 <body>
   <!-- <header>
     <div class="container header-content">
@@ -259,5 +259,15 @@
       </div>
     <div class="footer"><p>© 2024 be-online. Wszelkie prawa zastrzeżone.</p></div>
   </footer>
+  <div class="sticky-cta">
+    <a href="#kontakt"><button class="myBtn">Napisz do nas</button> </a>
+  </div>
+  <div class="popup" id="contactPopup">
+    <button class="close-btn" onclick="document.getElementById('contactPopup').style.display='none'">&times;</button>
+    <h4>Masz pytania?</h4>
+    <p>Chętnie doradzimy – umów bezpłatną konsultację.</p>
+    <button onclick="window.location='#kontakt'">Skontaktuj się</button>
+  </div>
+  <script defer src="./js/sales.js"></script>
+</body>
 </html>
-</br>

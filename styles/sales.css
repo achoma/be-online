@@ -126,7 +126,6 @@ body {
   padding-bottom: 40px;
   font-weight: 600;
 }
-/* ********** */
 .contact-item {
   gap: 20px;
   justify-content: center;
@@ -149,4 +148,64 @@ body {
   margin: 10px 0;
   border: 1px solid var(--light);
   border-radius: 10px;
+}
+/* Sticky CTA */
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* .sticky-cta a {
+  background: var(--green);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+} */
+
+/* .sticky-cta a:hover {
+  background-color: #4c8e28;
+} */
+
+/* Popup */
+.popup {
+  position: fixed;
+  bottom: 18px;
+  right: 20px;
+  background: white;
+  color: var(--dark);
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+  padding: 20px;
+  width: 280px;
+  z-index: 1000;
+  display: none;
+}
+
+.popup h4 {
+  margin-bottom: 10px;
+}
+
+.popup button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.popup .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: var(--dark);
 }
