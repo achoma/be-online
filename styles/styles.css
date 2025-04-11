@@ -928,7 +928,7 @@ footer svg :hover {
 
 .popup {
   position: fixed;
-  bottom: 318px;
+  bottom: 100px;
   right: 20px;
   background: white;
   color: var(--dark);
