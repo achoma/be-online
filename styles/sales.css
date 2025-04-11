@@ -1,3 +1,6 @@
+body {
+  background-color: var(--light-grey);
+}
 .sales-hero h1 {
   color: var(--light);
 }
@@ -18,7 +21,7 @@
   display: flex;
 }
 .sales-about {
-  padding: 90px 0;
+  padding-top: 90px;
   background-color: var(--light-grey);
 }
 .sales-about h3 {
@@ -112,8 +115,9 @@
   transform: translateY(8px);
 }
 .sales-contact {
-  padding: 90px 0;
-  background-color: var(--blue);
+  margin-top: 90px;
+  padding: 90px 120px;
+  background-color: var(--dark-blue);
 }
 .sales-contact h3 {
   color: var(--light);
