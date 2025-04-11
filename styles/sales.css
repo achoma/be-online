@@ -122,3 +122,32 @@
   padding-bottom: 40px;
   font-weight: 600;
 }
+/* ********** */
+.contact-item {
+  gap: 20px;
+  justify-content: center;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .contact-item {
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-item {
+  }
+}
+.contact-item form {
+  max-width: 100%;
+}
+.contact-item input,
+.contact-item textarea,
+.contact-item select {
+  color: var(--dark);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--light);
+  border-radius: 10px;
+}

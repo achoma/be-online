@@ -684,12 +684,14 @@ nav a:hover {
 #email::placeholder,
 #phone::placeholder,
 #subject::placeholder,
-#message::placeholder {
+#message::placeholder,
+#choice {
   color: var(--blue);
   font-size: 14px;
 }
 .contact input,
-.contact textarea {
+.contact textarea,
+.contact select {
   color: var(--dark);
   width: 100%;
   padding: 10px;

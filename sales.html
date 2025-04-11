@@ -53,7 +53,7 @@
 
   <section class="sales-hero">
     <div class="container">
-      <h1>Profesjonalne strony internetowe dla Twojego biznesu</h1>
+      <h1>Profesjonalne strony internetowe </br>dla Twojego biznesu</h1>
       <h3>Nowoczesny design, skuteczność i&nbsp;techniczne wsparcie w&nbsp;jednym miejscu.</h3>
       <div class="sales-btn">
         <button class="myBtn" >Umów dię na darmową konsultację</button><button class="myBtn blue-button" >Spawdź szczegóły naszej oferty </button>
@@ -159,7 +159,7 @@
   </section> -->
 
   <section id="kontakt" class="sales-contact" >
-    <div class="container contact">
+    <div class="container contact-item">
       <h3>Porozmawiajmy o Twojej stronie</h3>
       <div class="contact-content-item">
         <form id="contactForm"  action="https://formspree.io/f/xyzyqjrd"  method="POST">
@@ -178,12 +178,15 @@
                 <input id="phone" type="phone" placeholder="Nr telefonu (opcjonalnie)"name="name"  />
               </div>
             </label>
-            <label for="phone">
-              <div>
-                <input id="subject" type="test" placeholder="Temat"name="subject" />
-              </div>
+            <label>
+              <select id="choice" required>
+                <option value="">Wybierz typ usługi</option>
+                <option>Strona internetowa</option>
+                <option>Sklep online</option>
+                <option>Wsparcie techniczne</option>
+              </select>
             </label>
-            <label></label>
+            <label>
               <div>
                 <textarea id="message" type="text" placeholder="Twoja wiadomość"name="comment"></textarea>
               </div>
@@ -204,8 +207,8 @@
   </section>
   <footer >   
     <div class="footer-content container">
-      <a href="https://www.be-online.com.pl/">
-        <img src="images/logo (1).webp" alt="author logo" width="250" />
+      <a href="https://www.be-online.com.pl/" target="_blank" rel="noreferrer noopener">
+        <img src="images/logo (1).webp" alt="author logo" width="200" />
       </a>
         <div class="footer-content-item">
           <a id="sm" href="https://www.facebook.com/be.online.services" target="_blank" rel="noreferrer noopener">
@@ -223,3 +226,4 @@
     <div class="footer"><p>© 2024 be-online. Wszelkie prawa zastrzeżone.</p></div>
   </footer>
 </html>
+</br>
