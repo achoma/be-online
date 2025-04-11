@@ -149,24 +149,11 @@ body {
   border: 1px solid var(--light);
   border-radius: 10px;
 }
-/* Sticky CTA */
+
 .sticky-cta {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+  display: none;
 }
-
-/* .sticky-cta a {
-  background: var(--green);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
-} */
-
-/* .sticky-cta a:hover {
-  background-color: #4c8e28;
-} */

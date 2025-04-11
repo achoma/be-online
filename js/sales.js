@@ -1,3 +1,8 @@
+// Pokaż sticky CTA po 12 sekundach
+setTimeout(() => {
+  document.querySelector(".sticky-cta").style.display = "block";
+}, 10000); // 12000 milisekund = 12 sekund
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -16,4 +21,9 @@ document.querySelectorAll(".card, .section-title").forEach((el) => {
 // Pokaż popup po 10 sekundach
 setTimeout(() => {
   document.getElementById("contactPopup").style.display = "block";
-}, 10000);
+}, 8000); // 10000 milisekund = 10 sekund
+
+// Funkcja zamykająca popup
+function closePopup() {
+  document.getElementById("contactPopup").style.display = "none";
+}
