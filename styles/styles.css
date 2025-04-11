@@ -921,3 +921,44 @@ footer svg :hover {
 .button-close svg {
   color: var(--light);
 }
+
+/*----------------------------------------------------------------
+          POPUP
+  --------------------------------------------------------------------*/
+
+.popup {
+  position: fixed;
+  bottom: 18px;
+  right: 20px;
+  background: white;
+  color: var(--dark);
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px var(--dark);
+  padding: 20px;
+  width: 280px;
+  z-index: 1000;
+  display: none;
+}
+
+.popup h4,
+.popup p {
+  text-align: left;
+
+  margin-bottom: 10px;
+}
+
+.popup .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: var(--dark);
+}
+.popup .close-btn:hover {
+  color: var(--light-blue);
+}
