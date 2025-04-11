@@ -36,6 +36,31 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+          <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"
+  /></noscript>
     </head>
 <body>
   <!-- <header>
@@ -50,13 +75,12 @@
         </div>
     </div>
   </header> -->
-
   <section class="sales-hero">
     <div class="container">
       <h1>Profesjonalne strony internetowe </br>dla Twojego biznesu</h1>
       <h3>Nowoczesny design, skuteczność i&nbsp;techniczne wsparcie w&nbsp;jednym miejscu.</h3>
       <div class="sales-btn">
-        <button class="myBtn" >Umów dię na darmową konsultację</button><button class="myBtn blue-button" >Spawdź szczegóły naszej oferty </button>
+        <a href="#kontakt"><button class="myBtn" >Umów dię na darmową konsultację</button></a><a href="#sales-service"><button class="myBtn blue-button" >Spawdź szczegóły naszej oferty </button></a>
       </div>
     </div>
   </section>
@@ -111,19 +135,6 @@
       <h3>Zobacz nasze wybrane realizacje</h3>
       <div class="portfolio-image">
           <div class="portfolio-image-container">
-            <img loading="lazy" src="images/portfolio-1.webp" alt="sharkbuy.eu">
-            <div class="overlay1">
-              <span>
-                <p>sklep internetowy z artykułami sportowymi </br>
-                  – pełne wdrożenie WooCommerce</p>
-              </span>
-              <span >
-                <a href="https://sharkbuy.eu/" target="_blank" rel="noopener noreferrer">
-                  <button  class=" myBtn">zobacz realizację</button></a>
-              </span>
-            </div>
-          </div>
-          <div class="portfolio-image-container">
             <img loading="lazy" src="images/portfolio-3.webp" alt="festiwalkobiecosci108cudow.pl">
             <div class="overlay1">
               <span>
@@ -147,6 +158,19 @@
               </span>
             </div>
           </div>
+          <div class="portfolio-image-container">
+            <img loading="lazy" src="images/portfolio-1.webp" alt="sharkbuy.eu">
+            <div class="overlay1">
+              <span>
+                <p>sklep internetowy z artykułami sportowymi </br>
+                  – pełne wdrożenie WooCommerce</p>
+              </span>
+              <span >
+                <a href="https://sharkbuy.eu/" target="_blank" rel="noopener noreferrer">
+                  <button  class=" myBtn">zobacz realizację</button></a>
+              </span>
+            </div>
+          </div>
       </div>
   </section>
   <!-- <section class="section steps">
@@ -157,7 +181,33 @@
       <li>Otrzymasz gotową stronę i&nbsp;wsparcie</li>
     </ol>
   </section> -->
-
+  <section id="sales-work" class="sales-about">
+    <div class="container">
+      <h3>Jak wygląda współpraca?</h3>
+      <div class="features">
+        <div class="feature">
+          <h4>Rozpoznanie potrzeb</h4>
+          <p>Wypełniasz formularz, a&nbsp;następnie spotykamy się online, 
+            by omówić cele i&nbsp;wymagania Twojego projektu.</p>
+        </div>
+        <div class="feature">
+          <h4>Oferta i&nbsp;projekt</h4>
+          <p>TOtrzymujesz indywidualną ofertę oraz projekt graficzny 
+            dopasowany do Twojej marki i&nbsp;oczekiwań.</p>
+        </div>
+        <div class="feature">
+          <h4>Realizacja i&nbsp;wdrożenie</h4>
+          <p>Tworzymy stronę lub sklep, testujemy i&nbsp;uruchamiamy 
+            – gotowe do działania od razu po wdrożeniu.</p>
+        </div>
+        <div class="feature">
+          <h4>Opieka i&nbsp;wsparcie</h4>
+          <p>Po starcie zapewniamy stałą opiekę techniczną 
+            oraz możliwość dalszego rozwoju.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
   <section id="kontakt" class="sales-contact" >
     <div class="container contact-item">
       <h3>Porozmawiajmy o Twojej stronie</h3>
@@ -199,7 +249,7 @@
             </label>
             <div>
               <input type="text" name="_gotcha" style="display:none">
-              <button class="btn myBtn" type="submit">Wyślij wiadomość</button>
+              <button class="btn myBtn" type="submit">Umów rozmowę</button>
             </div>
         </form>
       </div>

@@ -116,8 +116,8 @@ body {
 }
 .sales-contact {
   margin-top: 90px;
-  padding: 90px 120px;
-  background-color: var(--dark-blue);
+  padding: 90px 0;
+  background-color: var(--blue);
 }
 .sales-contact h3 {
   color: var(--light);
@@ -134,16 +134,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
-  .contact-item {
-  }
-}
+
 @media screen and (min-width: 1200px) {
-  .contact-item {
+  .contact-item form {
+    padding: 0 240px;
   }
-}
-.contact-item form {
-  max-width: 100%;
 }
 .contact-item input,
 .contact-item textarea,
