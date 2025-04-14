@@ -140,7 +140,7 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 40px;
+  width: 50px;
   height: 10px;
   background-color: var(--dark-blue);
   border: none;
@@ -157,9 +157,9 @@ button {
 #scrollToTop svg {
   position: fixed;
   bottom: 30px;
-  right: 20px;
+  right: 30px;
   fill: var(--white);
-  width: 38px;
+  width: 28px;
   height: 30px;
 }
 
